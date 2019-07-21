@@ -1,4 +1,4 @@
-baseurl = "pnijhara.github.io"
+baseurl = "https://pnijhara.github.io/"
 theme = "hugo-geo"
 relativeURLs = false
 languageCode = "en-us"
