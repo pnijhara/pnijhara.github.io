@@ -1,3 +1,49 @@
-baseURL = "http://example.org/"
+baseurl = "pnijhara.github.io"
+theme = "hugo-geo"
+relativeURLs = false
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "pnijhara's blog"
+disqusShortname = "pnijhara"
+paginate = 5
+
+[taxonomies]
+	tag = "tags"
+	tutorial = "tutorials"
+
+[params]
+	showglobe = false
+
+	favicon = "favicon.ico"
+	
+	analytics = "code-here"
+
+	email = "prajjwalnijhara@gmail.com"
+
+	profilepic = "img/propic.jpeg"
+	
+	title = "Prajjwal Nijhara"
+	subtitle = "pnijhara's blog"
+
+	# Social buttons for sidebar
+	# Each of these are optional
+	[[params.socialbuttons]]
+	faicon = "github"
+	url = "https://github.com/pnijhara"
+	[[params.socialbuttons]]
+	faicon = "twitter"
+	url = "https://twitter.com/NijharaPrajjwal"
+	[[params.socialbuttons]]
+	faicon = "linkedin"
+	url = "https://linkedin.com"
+	[[params.socialbuttons]]
+	faicon = "instagram"
+	url = "https://instagram.com/nijharaprajjwal"
+
+	[[params.navlinks]]
+	name = "About"
+	url = "about"
+	
+	[[params.navlinks]]
+	name = "Blog"
+	url = ""
+	
