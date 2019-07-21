@@ -3,7 +3,7 @@ theme = "hugo-geo"
 relativeURLs = false
 languageCode = "en-us"
 title = "pnijhara's blog"
-disqusShortname = "pnijhara"
+disqusShortname = "pnijhara-github-io"
 paginate = 5
 
 [taxonomies]
