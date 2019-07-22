@@ -3,7 +3,7 @@ theme = "hugo-geo"
 relativeURLs = false
 languageCode = "en-us"
 title = "pnijhara's blog"
-disqusShortname = "pnijhara-github-io"
+#disqusShortname = "pnijhara-github-io"
 paginate = 5
 
 [taxonomies]
@@ -11,13 +11,15 @@ paginate = 5
 	tutorial = "tutorials"
 
 [params]
-	showglobe = false
+	showglobe = true
 
 	favicon = "favicon.ico"
 	
-	analytics = "code-here"
+	analytics = "none"
 
 	email = "prajjwalnijhara@gmail.com"
+
+	header = "MY THOUGHTS"
 
 	profilepic = "img/propic.jpeg"
 	
