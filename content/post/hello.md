@@ -2,8 +2,8 @@
 title: "Hello"
 date: 2019-07-26T16:43:08+05:30
 categories:
-- tranquilpeak
-- releases
+- Blog
+- Random discovery
 tags:
 - hugo
 - blog
@@ -13,9 +13,8 @@ keywords:
 - tech
 - hogo
 autoThumbnailImage : false
-thumbnailImagePosition : "left"
-coverImage : img/hello-world.png
-thumbnailImage: img/hello-world.png
+thumbnailImagePosition : "top"
+coverImage : img/Linux-killer.png
 metaAlignment: center
 ---
 I decided to gift myself a new blog and here is the result ;)
