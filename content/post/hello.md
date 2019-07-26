@@ -13,7 +13,7 @@ keywords:
 - tech
 - hogo
 autoThumbnailImage : false
-thumbnailImagePosition : "top"
+# thumbnailImagePosition : "top"
 coverImage : img/Linux-killer.png
 metaAlignment: center
 ---
