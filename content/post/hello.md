@@ -14,7 +14,7 @@ keywords:
 - hogo
 autoThumbnailImage : false
 # thumbnailImagePosition : "top"
-coverImage : img/Linux-killer.png
+coverImage : img/cover-post.jpg
 metaAlignment: center
 ---
 I decided to gift myself a new blog and here is the result ;)
