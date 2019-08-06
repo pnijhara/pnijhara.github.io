@@ -33,7 +33,7 @@ canonifyurls = true
 [author]
   name = "Prajjwal Nijhara"
   bio = "Open Source Enthusiast | Blogger | Speed Cuber | Hockey"
-  job = "Student @ ZHCET"
+  job = "Student @ZHCET, AMU, Aligarh"
   location = "India"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   #gravatarEmail = "pnijhara@myamu.ac.in"

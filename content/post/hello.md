@@ -17,7 +17,7 @@ autoThumbnailImage : false
 coverImage : img/cover-post.jpg
 metaAlignment: center
 ---
-I decided to gift myself a new blog and here is the result ;)
+I decided to gift myself a new blog and here is the result :)
 
 This blog was created on Hugo.
 <!--more-->
