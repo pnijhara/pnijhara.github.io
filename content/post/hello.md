@@ -13,8 +13,9 @@ keywords:
 - tech
 - hogo
 autoThumbnailImage : false
-# thumbnailImagePosition : "top"
-coverImage : img/cover-post.jpg
+thumbnailImagePosition : "left"
+thumbnailImage : img/cover/cover.png
+coverImage : img/cover/cover.png
 metaAlignment: center
 ---
 I decided to gift myself a new blog and here is the result :)
