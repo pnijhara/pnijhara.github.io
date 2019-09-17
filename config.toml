@@ -32,14 +32,14 @@ canonifyurls = true
 
 [author]
   name = "Prajjwal Nijhara"
-  bio = "Open Source Enthusiast | Blogger | Speed Cuber | Hockey"
-  job = "Student @ZHCET, AMU, Aligarh"
+  bio = "Open Source Enthusiast | Blogger | Speed Cuber | Hockey | Chess"
+  job = "Student @AMU"
   location = "India"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   #gravatarEmail = "pnijhara@myamu.ac.in"
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "img/profile/propic.jpeg"
+  picture = "img/profile/pnijhara.jpg"
   
   # Your Twitter username without the @. E.g : thibaudlepretre
   twitter = "NijharaPrajjwal"
