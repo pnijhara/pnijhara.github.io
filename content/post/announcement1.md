@@ -1,6 +1,6 @@
 ---
 title: "Announcement"
-date: 2019-12-17T23:39:06+05:30
+date: 2019-12-24T23:39:06+05:30
 categories:
 - announcements
 - Future
