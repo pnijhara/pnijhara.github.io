@@ -17,13 +17,13 @@ coverImage: img/thumbnail/blog4.jpg
 coverMeta: out
 metaAlignment: center
 ---
-Special thanks to events that occurred during this semester and a special thanks to the people who came and left from my life. These events and people created an unwanted strong impact on my life and taught me how to live life and how to inspire yourself. Though, because of them, I could have easily made my life a misery which I almost did. However, a resolution and special event stopped me to that. That resolution was to read more and more books and the event that made it successful even before 2020 was cut off from internet due to which I got the privilege of reading 3 of Robin Sharma's books.
+Special thanks to events that occurred during this semester and a special thanks to the people who came and left from my life. Those events and people created an unwanted strong impact on my life and taught me how to live life and how to inspire yourself. Though, because of them, I could have easily made my life a misery which I almost did. However, a resolution and special event stopped me to that. That resolution was to read more and more books and the event that made it successful even before 2020 was cut off from internet due to which I got the privilege of reading 3 of [Robin Sharma's](https://www.robinsharma.com/) books.
 
-* Who will cry when you die
+* Who Will Cry When You Die
 
-* The 5 AM club
+* The 5AM Club
 
-* The monk who sold his Ferrari
+* The Monk Who Sold His Ferrari
 
 Thanks to [Scott H Young's blog](https://www.scotthyoung.com/blog/2019/12/23/7-habits-read-more-books/) for help because of which I was able to read these books in such a short period.
 
