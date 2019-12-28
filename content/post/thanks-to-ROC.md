@@ -28,6 +28,6 @@ Special thanks to events that occurred during this semester and a special thanks
 Thanks to [Scott H Young's blog](https://www.scotthyoung.com/blog/2019/12/23/7-habits-read-more-books/) for help because of which I was able to read these books in such a short period.
 
 ### <b>What I learnt!!!</b>
->"When you are inspired by some great purpose, some extraordinary project, all your thoughts break their bonds and your mind transcends limitations, your consciousness expands and you find yourself in a new, great and wonderful world. Discipline, patience becomes alive and your past instead of your fear becomes your teacher and helps you to discover yourself to be a greater person than you ever dreamed to be"
+>"When you are inspired by some great purpose, some extraordinary project, all your thoughts break their bonds and your mind transcends limitations, your consciousness expands and you find yourself in a new, great and wonderful world. Discipline, patience become alive and your past instead of your fear becomes your teacher and helps you to discover yourself to be a greater person than you ever dreamed to be"
 
 
