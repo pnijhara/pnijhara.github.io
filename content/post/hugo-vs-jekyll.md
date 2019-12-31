@@ -16,7 +16,7 @@ coverImage: img/thumbnail/blog2.jpg
 coverMeta: out
 metaAlignment: center
 ---
-Well, I am not writing this blog because I have used Hugo for making my website. It is just that I want to compare the powers of Hugo and Jekyll. There is a whole list of static-site generators you can use and some of them are listed [here](https://www.creativebloq.com/features/10-best-static-site-generators). However, I am just comparing these 2 as they are widely used.
+Well, I am not writing this blog because I have used Hugo for making my website. It is just that I wanted    to compare the powers of Hugo and Jekyll. There is a whole list of static-site generators you can use and some of them are listed [here](https://www.creativebloq.com/features/10-best-static-site-generators). However, I am just comparing these 2 as they are widely used.
 
 >NOTE: I too don't know why I chose Hugo over Jekyll for making this website.
 
@@ -24,7 +24,7 @@ Well, I am not writing this blog because I have used Hugo for making my website.
 
 First of all, let us know what is a static-site generator. So, static site generators as the name suggest are simply website generators that take content, typically stored in flat files rather than databases, apply it against layouts or templates and generate a structure of purely static HTML files that are ready to be delivered.
 
-For more details, advantages and disadvantages on static-site generators read [Davidwalsh's blog](https://davidwalsh.name/introduction-static-site-generators).
+To know more about the advantages and disadvatages of static-site generators, read [Davidwalsh's blog](https://davidwalsh.name/introduction-static-site-generators).
 
 
 ### What is Hugo?
@@ -53,4 +53,4 @@ Jekyll is a file-based content management system written in ruby. Jekyll takes y
 | Fast builds| Slow builds|
 
 
-So, these were some of the basic differences I found while using them in creating my static sites. There is still one more important difference in them that is *Asset Pipeline* which I will try to cover in my upcoming blogs.
+So, these were some of the basic comparisons I made while using them in creating my static sites. There is still one more important comparison that is *Asset Pipeline* which I will try to cover in my upcoming blogs.
