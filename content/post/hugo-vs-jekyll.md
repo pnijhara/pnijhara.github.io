@@ -24,7 +24,7 @@ Well, I am not writing this blog because I have used Hugo for making my website.
 
 First of all, let us know what is a static-site generator. So, static site generators as the name suggest are simply website generators that take content, typically stored in flat files rather than databases, apply it against layouts or templates and generate a structure of purely static HTML files that are ready to be delivered.
 
-To know more about the advantages and disadvatages of static-site generators, read [Davidwalsh's blog](https://davidwalsh.name/introduction-static-site-generators).
+To know more about the advantages and disadvantages of static-site generators, read [Davidwalsh's blog](https://davidwalsh.name/introduction-static-site-generators).
 
 
 ### What is Hugo?
