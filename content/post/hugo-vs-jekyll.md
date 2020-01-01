@@ -11,8 +11,8 @@ keywords:
 - tech
 autoThumbnailImage : false
 thumbnailImagePosition : "left"
-thumbnailImage : img/thumbnail/blog2.jpg
-coverImage: img/thumbnail/blog2.jpg
+thumbnailImage : img/thumbnail/blog5.jpg
+coverImage: img/thumbnail/blog5.jpg
 coverMeta: out
 metaAlignment: center
 ---
