@@ -1,5 +1,5 @@
 ---
-title: "Hugo vs Jekyll"
+title: "Hugo vs Jekyll: A comparison based on personal usage"
 date: 2020-01-01T10:29:28+05:30
 categories:
 - blog
