@@ -1,6 +1,6 @@
 ---
 title: "Hugo vs Jekyll"
-date: 2019-12-31T16:49:45+05:30
+date: 2020-01-01T10:29:28+05:30
 categories:
 - blog
 - Random discovery
