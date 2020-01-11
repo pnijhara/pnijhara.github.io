@@ -9,7 +9,7 @@ tags:
 - Semester1
 - AMU-OSS
 keywords:
-- offtopic
+- Summary
 autoThumbnailImage : false
 thumbnailImagePosition : "left"
 thumbnailImage : img/thumbnail/blog7.png
