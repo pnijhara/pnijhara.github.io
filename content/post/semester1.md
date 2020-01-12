@@ -1,5 +1,5 @@
 ---
-title: "Semester1"
+title: "Semester 1 Report"
 date: 2020-01-09T21:29:12+05:30
 categories:
 - blog
