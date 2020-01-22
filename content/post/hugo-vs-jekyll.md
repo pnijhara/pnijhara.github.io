@@ -16,15 +16,15 @@ coverImage: img/thumbnail/blog5.jpg
 coverMeta: out
 metaAlignment: center
 ---
-Well, I am not writing this blog because I have used Hugo for making my website. It is just that I wanted    to compare the powers of Hugo and Jekyll. There is a whole list of static-site generators you can use and some of them are listed [here](https://www.creativebloq.com/features/10-best-static-site-generators). However, I am just comparing these 2 as they are widely used.
+Well, I am not writing this blog because I have used Hugo for making my website. It is just that I wanted    to compare the powers of Hugo and Jekyll. There is a whole list of static site generators you can use and some of them are listed [here](https://www.creativebloq.com/features/10-best-static-site-generators). However, I am just comparing these 2 as they are widely used.
 
 >NOTE: I too don't know why I chose Hugo over Jekyll for making this website.
 
-### What is a static-site generator?
+### What is a static site generator?
 
-First of all, let us know what is a static-site generator. So, static site generators as the name suggest are simply website generators that take content, typically stored in flat files rather than databases, apply it against layouts or templates and generate a structure of purely static HTML files that are ready to be delivered.
+First of all, let us know what is a static site generator. So, static site generators as the name suggest are simply website generators that take content, typically stored in flat files rather than databases, apply it against layouts or templates and generate a structure of purely static HTML files that are ready to be delivered.
 
-To know more about the advantages and disadvantages of static-site generators, read [Davidwalsh's blog](https://davidwalsh.name/introduction-static-site-generators).
+To know more about the advantages and disadvantages of static site generators, read [Davidwalsh's blog](https://davidwalsh.name/introduction-static-site-generators).
 
 
 ### What is Hugo?

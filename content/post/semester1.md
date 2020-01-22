@@ -17,9 +17,9 @@ coverImage: img/thumbnail/blog7.png
 coverMeta: out
 metaAlignment: center
 ---
-***Aligarh Muslim University***, the university I chose for pursuing my bachelors. It was not an easy decision, but somehow I managed to get in there. Electrical Engineering was never on my list, but when you are unable to get your dream branch you have to be satisfied with what your faith is. So, here I am studying Electrical Engineering at AMU.
+***Aligarh Muslim University***, the university I chose to pursue my bachelor's degree. It was not an easy decision, but somehow I managed to get in there. Electrical Engineering was never on my list, but when you are unable to get your dream branch you have to be satisfied with what your faith is. So, here I am studying Electrical Engineering at AMU.
 
-First month, away from home was like jumping straight into hell. I have never met so many new people in such a short span of time. But still I managed to make myself comfortable away from home. I kept myself busy with college stuff. 
+First month, away from home was like jumping straight into hell. I have never met so many new people in such a short span of time. But still I managed to make myself comfortable away from home. I kept myself busy with college work. 
 
 One of the best platforms that I encountered at AMU was the AMU-OSS (Open source society of Aligarh Muslim University). There I met a lot of awesome seniors. They never treated me as their junior, rather they treated me as their brother. 
 
