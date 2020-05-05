@@ -12,7 +12,7 @@ Other than trying new pieces of stuff I am learning to contribute in Open source
 
 I along with my college folks, had the privilege to code for the team “Narcodes”, and finished as the first runner up in the Smart India Hackathon 2019 (software edition) held in Guwahati, India where we worked on the project which is [hosted here](https://sih-analytics.herokuapp.com "sih-analytics") for Ministry of Statistics and PI.
 
-Recently, I got selected as a computer team member for [AUV ZHCET](http://auvzhcet.in/) club which deals with Autonomous under-water vehicles, there I came to know about Robotics Operating System(ROS) thus started learning more about it.
+Recently, I got selected as a computer team member for [AUV ZHCET](http://auvzhcet.in/) club which deals with Autonomous under-water vehicles, there I came to know about Robot Operating System(ROS) thus started learning more about it.
 
 Plans for the future
 ------------------------------------------------------------
