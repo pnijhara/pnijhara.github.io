@@ -31,6 +31,6 @@ Final Exams got over, time for vacations and new plans. I decided to learn the c
 
 [^bignote]: I think I'll ultimately end up using Django for prototyping and rapid application development. But I stand behind my contention that Flask is better suited to a new Python programmer.
 
-[^2]: Rahul and company really ragged me during interview. They are dangerous, **Beware**
+[^2]: Rahul and company really ragged me during interview. They are dangerous, **Beware!!**
 
-**You can now subscribe my newsletter by visiting this link [https://tinyletter.com/pnijhara/](https://tinyletter.com/pnijhara/)**
+**You can now subscribe to my newsletter by visiting this link [https://tinyletter.com/pnijhara/](https://tinyletter.com/pnijhara/)**
