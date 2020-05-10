@@ -2,7 +2,7 @@
 Personal blogging website, made by Hugo, Canva and other tools available on GitHub education Pack.
 
 
-Refer https://github.com/pnijhara/pnijhara.gihub.io for the repo that contains hosted version.
+Refer https://github.com/pnijhara/pnijhara.github.io for the repo that contains hosted version.
 
 
 
