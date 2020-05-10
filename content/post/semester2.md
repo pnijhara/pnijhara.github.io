@@ -12,8 +12,8 @@ keywords:
 - Summary
 autoThumbnailImage : false
 thumbnailImagePosition : "left"
-thumbnailImage : img/thumbnail/blog7.png
-coverImage: img/thumbnail/blog7.png
+thumbnailImage : img/thumbnail/blog8.png
+coverImage: img/thumbnail/blog8.png
 coverMeta: out
 metaAlignment: center
 ---
