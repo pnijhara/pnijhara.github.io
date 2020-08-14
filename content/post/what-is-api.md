@@ -78,9 +78,9 @@ These properties make JSON an ideal data-interchange language.
 ```XML
 <Users>
  <User firstName="Vince" lastName="Light" />
- <User firstName="Vince" lastName="Light" />
- <User firstName="Vince" lastName="Light" />
- <User firstName="Vince" lastName="Light" />
+ <User firstName="Super" lastName="Nova" />
+ <User firstName="Will" lastName="Smith" />
+ <User firstName="Peter" lastName="Patrik" />
 </Users>
 ```
 
