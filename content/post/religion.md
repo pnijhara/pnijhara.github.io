@@ -31,4 +31,5 @@ Well, we cannot create a world without religion as it gives you the art of livin
 
  Aligarh Muslim University
 
- ![lovenation_hme instagram picture](/img/blog3-pic1.jpg)
+ ![lovenation_hme instagram picture](/img/religion/blog3-pic1.jpg)
+ 

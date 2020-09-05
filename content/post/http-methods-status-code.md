@@ -44,11 +44,11 @@ HTTP has some parts which are actively used in Backend Development.
 
     This is how Request-headers look like
 
-    ![Request-headers](/img/blog11-pic1.png)
+    ![Request-headers](/img/http-methods-status-code/blog11-pic1.png)
 
     And this is how a Response-header look like
 
-    ![Response-header](/img/blog11-pic2.png)
+    ![Response-header](/img/http-methods-status-code/blog11-pic2.png)
 
 3. **Payload**: The payload is the part of that response that is communicating directly to you. In REST APIs this is usually some JSON formatted data. The payload is the part of that response that is communicating directly to you. In REST APIs this is usually some JSON formatted data.
 

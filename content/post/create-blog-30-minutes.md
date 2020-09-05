@@ -63,7 +63,7 @@ Change into the newly created directory
 >``$ cd myblog``
 
 Project will somewhat look like this
-![Project skeleton](/img/blog1-pic1.png)
+![Project skeleton](/img/create-blog-30-minutes/blog1-pic1.png)
 
 
 ## Clone Theme
@@ -84,7 +84,7 @@ You can verify whether it is activated by hugo server
 > `$ hugo server -D`
 
 Now in your browser go to http://localhost:1313 and bam!!! Here’s what your website will look like.
-![website look](/img/blog1-pic2.png)
+![website look](/img/create-blog-30-minutes/blog1-pic2.png)
 
 ## Updating your blog
 
@@ -106,8 +106,8 @@ Adding content to the blog is very simple.
 
 > `$ hugo new post/hello.md`
 
-![content](/img/blog1-pic3.png)
-![content](/img/blog1-pic4.png)
+![content](/img/create-blog-30-minutes/blog1-pic3.png)
+![content](/img/create-blog-30-minutes/blog1-pic4.png)
 
 .md files support markdown format. If you want to learn about markdown format [click here](https://www.markdownguide.org/).
 
