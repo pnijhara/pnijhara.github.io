@@ -6,10 +6,19 @@
     <description>Recent content in Python on pnijhara&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 13:56:18 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 06 May 2021 13:13:43 +0530</lastBuildDate>
     
 	<atom:link href="https://pnijhara.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>An end and a start</title>
+      <link>https://pnijhara.github.io/2021/05/an-end-and-a-start/</link>
+      <pubDate>Thu, 06 May 2021 13:13:43 +0530</pubDate>
+      
+      <guid>https://pnijhara.github.io/2021/05/an-end-and-a-start/</guid>
+      <description>Writing this blog after a very long time. I was trying to complete my FastAPI journey and somewhat succeeded too. However, the aim was to create tutorials on each and every topic. Tried to create some of them. Introduction to API, JSON and XML along with HTTP methods and status codes went great. Areeb Jamal and Prateek Jain helped a lot in reviewing them. Some of the tutorials are still pending as drafts.</description>
+    </item>
     
     <item>
       <title>HTTP Methods and Status Code</title>

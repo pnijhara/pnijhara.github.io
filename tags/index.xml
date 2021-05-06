@@ -6,7 +6,7 @@
     <description>Recent content in Tags on pnijhara&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Aug 2020 13:56:18 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 06 May 2021 13:13:43 +0530</lastBuildDate>
     
 	<atom:link href="https://pnijhara.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title>Backend</title>
       <link>https://pnijhara.github.io/tags/backend/</link>
-      <pubDate>Tue, 18 Aug 2020 13:56:18 +0530</pubDate>
+      <pubDate>Thu, 06 May 2021 13:13:43 +0530</pubDate>
       
       <guid>https://pnijhara.github.io/tags/backend/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Science</title>
+      <link>https://pnijhara.github.io/tags/computer-science/</link>
+      <pubDate>Thu, 06 May 2021 13:13:43 +0530</pubDate>
+      
+      <guid>https://pnijhara.github.io/tags/computer-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FastAPI</title>
+      <link>https://pnijhara.github.io/tags/fastapi/</link>
+      <pubDate>Thu, 06 May 2021 13:13:43 +0530</pubDate>
+      
+      <guid>https://pnijhara.github.io/tags/fastapi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://pnijhara.github.io/tags/python/</link>
+      <pubDate>Thu, 06 May 2021 13:13:43 +0530</pubDate>
+      
+      <guid>https://pnijhara.github.io/tags/python/</guid>
       <description></description>
     </item>
     
@@ -26,24 +53,6 @@
       <pubDate>Tue, 18 Aug 2020 13:56:18 +0530</pubDate>
       
       <guid>https://pnijhara.github.io/tags/best-practices/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>FastAPI</title>
-      <link>https://pnijhara.github.io/tags/fastapi/</link>
-      <pubDate>Tue, 18 Aug 2020 13:56:18 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/tags/fastapi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://pnijhara.github.io/tags/python/</link>
-      <pubDate>Tue, 18 Aug 2020 13:56:18 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/tags/python/</guid>
       <description></description>
     </item>
     
