@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Operating System on pnijhara&#39;s blog</title>
+    <link>https://pnijhara.github.io/tags/operating-system/</link>
+    <description>Recent content in Operating System on pnijhara&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 May 2021 08:41:38 +0530</lastBuildDate>
+    
+	<atom:link href="https://pnijhara.github.io/tags/operating-system/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Prajjwal Learns CS (Operating System)</title>
+      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system/</link>
+      <pubDate>Fri, 07 May 2021 08:41:38 +0530</pubDate>
+      
+      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system/</guid>
+      <description>More than Computer Science itself, I am beginning a new phase of my journey, where now I will not write much code. However, it is all intended towards the theoretical aspect of the things I used to love. I am committing 5 to 6 hours a day on weekdays and a tiny to the blogs. The rest of the time will go to my major degree (Electrical Engineering).
+Many asked me why I am learning CS along with Electrical.</description>
+    </item>
+    
+  </channel>
+</rss>
