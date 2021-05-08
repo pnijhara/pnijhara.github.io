@@ -20,7 +20,7 @@ The idea of learning CS is to make my scope broader. The idea of bringing automa
 Moving back to the topic, I have arranged all possible resources for learning CS. Most of them are free and available on the internet. Started CS with operating system. 
 
 What did I do/learn today?
-1. How are computer work
+1. How computers work
 2. Hardware and software integration
 3. Types of computer software
 4. What is OS and types of OS in detail
