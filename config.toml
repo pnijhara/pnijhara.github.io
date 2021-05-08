@@ -112,7 +112,7 @@ canonifyurls = true
   identifier = "linkedin"
   name = "Linkedin"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
-  url = "https://www.linkedin.com/in/prajjwal-n-7aa0b0135/"
+  url = "https://www.linkedin.com/in/nijharaprajjwal/"
 
 [[menu.links]]
   weight = 4
