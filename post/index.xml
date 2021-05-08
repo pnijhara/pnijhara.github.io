@@ -6,10 +6,23 @@
     <description>Recent content in Posts on pnijhara&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 May 2021 08:41:38 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 08 May 2021 09:49:27 +0530</lastBuildDate>
     
 	<atom:link href="https://pnijhara.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Prajjwal Learns CS (Operating System) - 02</title>
+      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-02/</link>
+      <pubDate>Sat, 08 May 2021 09:49:27 +0530</pubDate>
+      
+      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-02/</guid>
+      <description>The day was good.
+Did some productive tasks.
+Managed to focus, follow and write notes.
+What did I do/learn today?
+ Went into the depth of types of OS and how OS evolved with time. What is a process Memory blocks Process control blocks  Process control blocks in my opinion is not that simple topic. I have to give more time to such topics. Real-time operating systems (RTOS) and Embedded OS, attracted me a lot.</description>
+    </item>
     
     <item>
       <title>Prajjwal Learns CS (Operating System)</title>
