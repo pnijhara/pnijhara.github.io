@@ -6,10 +6,19 @@
     <description>Recent content on pnijhara&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 May 2021 09:49:27 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 09 May 2021 14:09:12 +0530</lastBuildDate>
     
 	<atom:link href="https://pnijhara.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Prajjwal Learns CS (Operating System) - 03</title>
+      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-03/</link>
+      <pubDate>Sun, 09 May 2021 14:09:12 +0530</pubDate>
+      
+      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-03/</guid>
+      <description>I completely forgot about today&amp;rsquo;s blog. Got occupied with lot&amp;rsquo;s of other work. I was writing a proposal for the final year project. Along with that, I got occupied with the chapter 2 of the book that I am reviewing. First book 1 got published yesterday. In return I recieved Packt one year subsciption where I can read unlimited number of books for free. I am thinking of reading TDD with Django.</description>
+    </item>
     
     <item>
       <title>Prajjwal Learns CS (Operating System) - 02</title>
