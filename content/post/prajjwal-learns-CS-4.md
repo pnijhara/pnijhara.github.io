@@ -1,5 +1,5 @@
 ---
-title: "Prajjwal Learns CS 4"
+title: "Prajjwal Learns CS (Operating System) - 04"
 date: 2021-05-10T21:15:05+05:30
 categories:
 - AMU-OSS
