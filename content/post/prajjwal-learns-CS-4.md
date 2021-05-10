@@ -13,7 +13,7 @@ autoThumbnailImage : false
 ---
 Another tough day. Got occupied with lots of work. For most of the time, I was busy completing college assignment. However, I came to know that the deadline of the assignment is shifted to some other day.
 
-Also go occupied with [SSGSA](http://ssgsa.us/members.php#ExecutiveCommittee) [^footnote] website work. There was a bug that the team found in the portal. The data was not getting updated in the production database. It was like a ghost database that the website on production was fetching. After wasting 5 hours on the bug, we came to know that it was an issue with the hosting service. They were updating their UI which caused the problem in the production environment.
+Also got occupied with [SSGSA](http://ssgsa.us/members.php#ExecutiveCommittee) [^footnote] website work. There was a bug that the team found in the portal. The data was not getting updated in the production database. It was like a ghost database that the website on production was fetching. After wasting 5 hours on the bug, we came to know that it was an issue with the hosting service. They were updating their UI which caused the problem in the production environment.
 
 Anyways, I still found some time to learn some CS stuff.
 
