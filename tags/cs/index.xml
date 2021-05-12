@@ -6,10 +6,20 @@
     <description>Recent content in CS on pnijhara&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 May 2021 18:44:45 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 12 May 2021 21:33:05 +0530</lastBuildDate>
     
 	<atom:link href="https://pnijhara.github.io/tags/cs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Prajjwal Learns CS (Operating System) - 06</title>
+      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/</link>
+      <pubDate>Wed, 12 May 2021 21:33:05 +0530</pubDate>
+      
+      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/</guid>
+      <description>And again, the SSGSA issue caught my day. Finally, after long debugging hours, the web team found the issue. It was because of malware in the code because of the hosting service that created another instance of the database. The database which I mentioned as the ghost database in the last blog. We are now trying to migrate our project to some other hosting service.
+Coming back to computer science, I skipped inter-process communication and the fork system call.</description>
+    </item>
     
     <item>
       <title>Prajjwal Learns CS (Operating System) - 05</title>

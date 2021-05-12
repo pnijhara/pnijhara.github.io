@@ -8,29 +8,29 @@
 <meta name="generator" content="Hugo 0.74.3 with theme Tranquilpeak 0.4.8-BETA">
 <meta name="author" content="Prajjwal Nijhara">
 <meta name="keywords" content="tech, Prajjwal Nijhara, pnijhara, The pnijhara Blog, The official blog of Prajjwal Nijhara">
-<meta name="description" content="SSGSA issue is still not resolved. I still don&rsquo;t know which database the production website is fetching. It is showing different changes at different places, which is very unusual. The day was hectic as usual with some level of depression. Heard lot&rsquo;s of deaths today. Some of them were not easy to digest.
-Instead of moving forward, I decided to revise all the concepts that I have learnt till now. I will try to solve some famous OS problems for the rest of the day.">
+<meta name="description" content="And again, the SSGSA issue caught my day. Finally, after long debugging hours, the web team found the issue. It was because of malware in the code because of the hosting service that created another instance of the database. The database which I mentioned as the ghost database in the last blog. We are now trying to migrate our project to some other hosting service.
+Coming back to computer science, I skipped inter-process communication and the fork system call.">
 
 
-<meta property="og:description" content="SSGSA issue is still not resolved. I still don&rsquo;t know which database the production website is fetching. It is showing different changes at different places, which is very unusual. The day was hectic as usual with some level of depression. Heard lot&rsquo;s of deaths today. Some of them were not easy to digest.
-Instead of moving forward, I decided to revise all the concepts that I have learnt till now. I will try to solve some famous OS problems for the rest of the day.">
+<meta property="og:description" content="And again, the SSGSA issue caught my day. Finally, after long debugging hours, the web team found the issue. It was because of malware in the code because of the hosting service that created another instance of the database. The database which I mentioned as the ghost database in the last blog. We are now trying to migrate our project to some other hosting service.
+Coming back to computer science, I skipped inter-process communication and the fork system call.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Prajjwal Learns CS (Operating System) - 05">
-<meta name="twitter:title" content="Prajjwal Learns CS (Operating System) - 05">
-<meta property="og:url" content="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/">
-<meta property="twitter:url" content="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/">
+<meta property="og:title" content="Prajjwal Learns CS (Operating System) - 06">
+<meta name="twitter:title" content="Prajjwal Learns CS (Operating System) - 06">
+<meta property="og:url" content="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/">
+<meta property="twitter:url" content="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/">
 <meta property="og:site_name" content="pnijhara&#39;s blog">
-<meta property="og:description" content="SSGSA issue is still not resolved. I still don&rsquo;t know which database the production website is fetching. It is showing different changes at different places, which is very unusual. The day was hectic as usual with some level of depression. Heard lot&rsquo;s of deaths today. Some of them were not easy to digest.
-Instead of moving forward, I decided to revise all the concepts that I have learnt till now. I will try to solve some famous OS problems for the rest of the day.">
-<meta name="twitter:description" content="SSGSA issue is still not resolved. I still don&rsquo;t know which database the production website is fetching. It is showing different changes at different places, which is very unusual. The day was hectic as usual with some level of depression. Heard lot&rsquo;s of deaths today. Some of them were not easy to digest.
-Instead of moving forward, I decided to revise all the concepts that I have learnt till now. I will try to solve some famous OS problems for the rest of the day.">
+<meta property="og:description" content="And again, the SSGSA issue caught my day. Finally, after long debugging hours, the web team found the issue. It was because of malware in the code because of the hosting service that created another instance of the database. The database which I mentioned as the ghost database in the last blog. We are now trying to migrate our project to some other hosting service.
+Coming back to computer science, I skipped inter-process communication and the fork system call.">
+<meta name="twitter:description" content="And again, the SSGSA issue caught my day. Finally, after long debugging hours, the web team found the issue. It was because of malware in the code because of the hosting service that created another instance of the database. The database which I mentioned as the ghost database in the last blog. We are now trying to migrate our project to some other hosting service.
+Coming back to computer science, I skipped inter-process communication and the fork system call.">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2021-05-11T18:44:45">
+    <meta property="article:published_time" content="2021-05-12T21:33:05">
   
   
-    <meta property="article:modified_time" content="2021-05-11T18:44:45">
+    <meta property="article:modified_time" content="2021-05-12T21:33:05">
   
   
   
@@ -69,14 +69,14 @@ Instead of moving forward, I decided to revise all the concepts that I have lear
   <meta property="twitter:image" content="https://pnijhara.github.io/img/profile/pnijhara.jpg">
 
 
-    <title>Prajjwal Learns CS (Operating System) - 05</title>
+    <title>Prajjwal Learns CS (Operating System) - 06</title>
 
     <link rel="icon" href="img/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/">
+    <link rel="canonical" href="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -279,15 +279,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Prajjwal Learns CS (Operating System) - 05
+      Prajjwal Learns CS (Operating System) - 06
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2021-05-11T18:44:45&#43;05:30">
+      <time itemprop="datePublished" datetime="2021-05-12T21:33:05&#43;05:30">
         
-  May 11, 2021
+  May 12, 2021
 
       </time>
     
@@ -308,9 +308,15 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>SSGSA issue is still not resolved. I still don&rsquo;t know which database the production website is fetching. It is showing different changes at different places, which is very unusual. The day was hectic as usual with some level of depression. Heard lot&rsquo;s of deaths today. Some of them were not easy to digest.</p>
-<p>Instead of moving forward, I decided to revise all the concepts that I have learnt till now. I will try to solve some famous OS problems for the rest of the day. Hope that gives me some motivation.</p>
-<p>Also while revising the OS that I have learnt till now. I came to know that in addition to the 5 traditional process states, there are 2 more states. I will give them some more time in exploring them.</p>
+              <p>And again, the SSGSA issue caught my day. Finally, after long debugging hours, the web team found the issue. It was because of malware in the code because of the hosting service that created another instance of the database. The database which I mentioned as the ghost database in the last blog. We are now trying to migrate our project to some other hosting service.</p>
+<p>Coming back to computer science, I skipped inter-process communication and the fork system call. I will complete them after scheduling algorithms. But for today, I focussed on CPU scheduling criteria and different scheduling algorithms.</p>
+<p>What did I learn/do today?</p>
+<ol>
+<li>SSGSA bug</li>
+<li>CPU scheduling criteria</li>
+<li>CPU scheduling algorithms</li>
+<li>Types of CPU scheduling algorithms.</li>
+</ol>
 
               
             </div>
@@ -338,7 +344,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/" data-tooltip="Prajjwal Learns CS (Operating System) - 06">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -346,7 +352,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-04/" data-tooltip="Prajjwal Learns CS (Operating System) - 04">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/" data-tooltip="Prajjwal Learns CS (Operating System) - 05">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -364,13 +370,13 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -418,7 +424,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/" data-tooltip="Prajjwal Learns CS (Operating System) - 06">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -426,7 +432,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-04/" data-tooltip="Prajjwal Learns CS (Operating System) - 04">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/" data-tooltip="Prajjwal Learns CS (Operating System) - 05">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -444,13 +450,13 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/">
               <i class="fa fa-facebook-official"></i>
             </a>
           </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -480,13 +486,13 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpnijhara.github.io%2F2021%2F05%2Fprajjwal-learns-cs-operating-system-05%2F">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpnijhara.github.io%2F2021%2F05%2Fprajjwal-learns-cs-operating-system-06%2F">
           <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fpnijhara.github.io%2F2021%2F05%2Fprajjwal-learns-cs-operating-system-05%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fpnijhara.github.io%2F2021%2F05%2Fprajjwal-learns-cs-operating-system-06%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
@@ -578,9 +584,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/pnijhara.github.io\/2021\/05\/prajjwal-learns-cs-operating-system-05\/';
+          this.page.url = 'https:\/\/pnijhara.github.io\/2021\/05\/prajjwal-learns-cs-operating-system-06\/';
           
-            this.page.identifier = '\/2021\/05\/prajjwal-learns-cs-operating-system-05\/'
+            this.page.identifier = '\/2021\/05\/prajjwal-learns-cs-operating-system-06\/'
           
         };
         (function() {
