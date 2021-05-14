@@ -6,10 +6,21 @@
     <description>Recent content in Operating System on pnijhara&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 May 2021 20:35:01 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 14 May 2021 21:16:05 +0530</lastBuildDate>
     
 	<atom:link href="https://pnijhara.github.io/tags/operating-system/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Prajjwal Learns CS (Operating System) - 08</title>
+      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-08/</link>
+      <pubDate>Fri, 14 May 2021 21:16:05 +0530</pubDate>
+      
+      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-08/</guid>
+      <description>Finally a long jump to scheduling algorithms. I was eagerly waiting for learning CPU scheduling algorithms.
+What did I learn/do today?
+ Types of CPU scheduling algorithms  Preemptive Non-preemptive   Non-preemptive  FCFS SJF Non-preeptive priority HRRN    Gave a lot of time to non-preemptive scheduling today. I will solve some questions tomorrow. Wish me luck!!</description>
+    </item>
     
     <item>
       <title>Prajjwal Learns CS (Operating System) - 07</title>
