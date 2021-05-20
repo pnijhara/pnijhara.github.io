@@ -1,319 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>pnijhara&#39;s blog</title>
-    <link>https://pnijhara.github.io/</link>
-    <description>Recent content on pnijhara&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 17 May 2021 20:59:20 +0530</lastBuildDate>
-    
-	<atom:link href="https://pnijhara.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Prajjwal Learns CS (Operating System) - 10</title>
-      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-10/</link>
-      <pubDate>Mon, 17 May 2021 20:59:20 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-10/</guid>
-      <description>Back to track. I am almost done with my college assignments and the review of chapter 3. After completing all backlogs, I finally was able to give some time to CS.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pnijhara's blog</title><link>https://pnijhara.github.io/</link><description>Recent content on pnijhara's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 20 May 2021 20:25:03 +0530</lastBuildDate><atom:link href="https://pnijhara.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Prajjwal Learns CS (Operating System) - 11</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-11/</link><pubDate>Thu, 20 May 2021 20:25:03 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-11/</guid><description>Writing this blog after two days. I was struggling with content. I wasn&amp;rsquo;t able to find some good content that could clear my concepts on Deadlocks. Luckily, after browsing the internet for a day, I found some youtube videos. Gave almost a complete day to deadlocks. It&amp;rsquo;s so far the best topic I have read in OS.
+What are the topics that I covered in Deadlock?
+What is deadlock? Deadlock Occurance (conditions) Deadlock Handling Strategies Deadlock Prevention Deadlock Avoidance There are 3 more strategies on the list.</description></item><item><title>Prajjwal Learns CS (Operating System) - 10</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-10/</link><pubDate>Mon, 17 May 2021 20:59:20 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-10/</guid><description>Back to track. I am almost done with my college assignments and the review of chapter 3. After completing all backlogs, I finally was able to give some time to CS.
 What did I do/learn today?
- Preeptive CPU scheduling algoriths  Round Robin SRTF Priority MLQ MLFQ    I even tried writing python codes for them. I will now practice some questions with the Gantt chart on CPU scheduling before moving to any other topic.</description>
-    </item>
-    
-    <item>
-      <title>Prajjwal Learns CS (Operating System) - 09 </title>
-      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-09/</link>
-      <pubDate>Sat, 15 May 2021 20:47:04 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-09/</guid>
-      <description>Didn&amp;rsquo;t do anything productive today. Sometimes it&amp;rsquo;s ok to take a break. Not taking life too seriously. I know I will never get out of it alive.
-Anyways, to keep the pace, I just revised the concepts that I have studied till now. Shifting today&amp;rsquo;s tasks to tomorrow.</description>
-    </item>
-    
-    <item>
-      <title>Prajjwal Learns CS (Operating System) - 08</title>
-      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-08/</link>
-      <pubDate>Fri, 14 May 2021 21:16:05 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-08/</guid>
-      <description>Finally a long jump to scheduling algorithms. I was eagerly waiting for learning CPU scheduling algorithms.
+Preeptive CPU scheduling algoriths Round Robin SRTF Priority MLQ MLFQ I even tried writing python codes for them. I will now practice some questions with the Gantt chart on CPU scheduling before moving to any other topic.</description></item><item><title>Prajjwal Learns CS (Operating System) - 09</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-09/</link><pubDate>Sat, 15 May 2021 20:47:04 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-09/</guid><description>Didn&amp;rsquo;t do anything productive today. Sometimes it&amp;rsquo;s ok to take a break. Not taking life too seriously. I know I will never get out of it alive.
+Anyways, to keep the pace, I just revised the concepts that I have studied till now. Shifting today&amp;rsquo;s tasks to tomorrow.</description></item><item><title>Prajjwal Learns CS (Operating System) - 08</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-08/</link><pubDate>Fri, 14 May 2021 21:16:05 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-08/</guid><description>Finally a long jump to scheduling algorithms. I was eagerly waiting for learning CPU scheduling algorithms.
 What did I learn/do today?
- Types of CPU scheduling algorithms  Preemptive Non-preemptive   Non-preemptive  FCFS SJF Non-preeptive priority HRRN    Gave a lot of time to non-preemptive scheduling today. I will solve some questions tomorrow. Wish me luck!!</description>
-    </item>
-    
-    <item>
-      <title>Prajjwal Learns CS (Operating System) - 07</title>
-      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-07/</link>
-      <pubDate>Thu, 13 May 2021 20:35:01 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-07/</guid>
-      <description>Today marks the 7 days streak of learning CS. The whole week was amazing. Learnt a lot of new things. I think I should keep revising my electrical engineering concepts along with this CS journey. After all, I have to take my bachelor&amp;rsquo;s degree in EE itself.
+Types of CPU scheduling algorithms Preemptive Non-preemptive Non-preemptive FCFS SJF Non-preeptive priority HRRN Gave a lot of time to non-preemptive scheduling today. I will solve some questions tomorrow. Wish me luck!!</description></item><item><title>Prajjwal Learns CS (Operating System) - 07</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-07/</link><pubDate>Thu, 13 May 2021 20:35:01 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-07/</guid><description>Today marks the 7 days streak of learning CS. The whole week was amazing. Learnt a lot of new things. I think I should keep revising my electrical engineering concepts along with this CS journey. After all, I have to take my bachelor&amp;rsquo;s degree in EE itself.
 Along with all the academia, I am planning to give the weekend to revise Vuejs.
 What did I learn/do today?
- Need of CPU scheduling Types of CPU schedulers Process states and CPU schedulers linked to them CPU scheduling criteria  For tomorrow, I am planning to learn about types of CPU scheduling algorithms.</description>
-    </item>
-    
-    <item>
-      <title>Prajjwal Learns CS (Operating System) - 06</title>
-      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/</link>
-      <pubDate>Wed, 12 May 2021 21:33:05 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/</guid>
-      <description>And again, the SSGSA issue caught my day. Finally, after long debugging hours, the web team found the issue. It was because of malware in the code because of the hosting service that created another instance of the database. The database which I mentioned as the ghost database in the last blog. We are now trying to migrate our project to some other hosting service.
-Coming back to computer science, I skipped inter-process communication and the fork system call.</description>
-    </item>
-    
-    <item>
-      <title>Prajjwal Learns CS (Operating System) - 05</title>
-      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/</link>
-      <pubDate>Tue, 11 May 2021 18:44:45 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/</guid>
-      <description>SSGSA issue is still not resolved. I still don&amp;rsquo;t know which database the production website is fetching. It is showing different changes at different places, which is very unusual. The day was hectic as usual with some level of depression. Heard lot&amp;rsquo;s of deaths today. Some of them were not easy to digest.
-Instead of moving forward, I decided to revise all the concepts that I have learnt till now. I will try to solve some famous OS problems for the rest of the day.</description>
-    </item>
-    
-    <item>
-      <title>Prajjwal Learns CS (Operating System) - 04</title>
-      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-04/</link>
-      <pubDate>Mon, 10 May 2021 21:15:05 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-04/</guid>
-      <description>Another tough day. Got occupied with lots of work. For most of the time, I was busy completing college assignment. However, I came to know that the deadline of the assignment is shifted to some other day.
-Also got occupied with SSGSA 1 website work. There was a bug that the team found in the portal. The data was not getting updated in the production database. It was like a ghost database that the website on production was fetching.</description>
-    </item>
-    
-    <item>
-      <title>Prajjwal Learns CS (Operating System) - 03</title>
-      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-03/</link>
-      <pubDate>Sun, 09 May 2021 14:09:12 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-03/</guid>
-      <description>I completely forgot about today&amp;rsquo;s blog. Got occupied with lots of other work. I was writing a proposal for the final year project. Along with that, I got occupied with chapter 2 of the book that I am reviewing. The first book 1 got published yesterday. In return, I received a one-year Packt subscription where I can read an unlimited number of books for free. I am thinking of reading TDD with Django.</description>
-    </item>
-    
-    <item>
-      <title>Prajjwal Learns CS (Operating System) - 02</title>
-      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-02/</link>
-      <pubDate>Sat, 08 May 2021 09:49:27 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-02/</guid>
-      <description>The day was good.
+Need of CPU scheduling Types of CPU schedulers Process states and CPU schedulers linked to them CPU scheduling criteria For tomorrow, I am planning to learn about types of CPU scheduling algorithms.</description></item><item><title>Prajjwal Learns CS (Operating System) - 06</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/</link><pubDate>Wed, 12 May 2021 21:33:05 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-06/</guid><description>And again, the SSGSA issue caught my day. Finally, after long debugging hours, the web team found the issue. It was because of malware in the code because of the hosting service that created another instance of the database. The database which I mentioned as the ghost database in the last blog. We are now trying to migrate our project to some other hosting service.
+Coming back to computer science, I skipped inter-process communication and the fork system call.</description></item><item><title>Prajjwal Learns CS (Operating System) - 05</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/</link><pubDate>Tue, 11 May 2021 18:44:45 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-05/</guid><description>SSGSA issue is still not resolved. I still don&amp;rsquo;t know which database the production website is fetching. It is showing different changes at different places, which is very unusual. The day was hectic as usual with some level of depression. Heard lot&amp;rsquo;s of deaths today. Some of them were not easy to digest.
+Instead of moving forward, I decided to revise all the concepts that I have learnt till now. I will try to solve some famous OS problems for the rest of the day.</description></item><item><title>Prajjwal Learns CS (Operating System) - 04</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-04/</link><pubDate>Mon, 10 May 2021 21:15:05 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-04/</guid><description>Another tough day. Got occupied with lots of work. For most of the time, I was busy completing college assignment. However, I came to know that the deadline of the assignment is shifted to some other day.
+Also got occupied with SSGSA 1 website work. There was a bug that the team found in the portal. The data was not getting updated in the production database. It was like a ghost database that the website on production was fetching.</description></item><item><title>Prajjwal Learns CS (Operating System) - 03</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-03/</link><pubDate>Sun, 09 May 2021 14:09:12 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-03/</guid><description>I completely forgot about today&amp;rsquo;s blog. Got occupied with lots of other work. I was writing a proposal for the final year project. Along with that, I got occupied with chapter 2 of the book that I am reviewing. The first book 1 got published yesterday. In return, I received a one-year Packt subscription where I can read an unlimited number of books for free. I am thinking of reading TDD with Django.</description></item><item><title>Prajjwal Learns CS (Operating System) - 02</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-02/</link><pubDate>Sat, 08 May 2021 09:49:27 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system-02/</guid><description>The day was good.
 Did some productive tasks.
 Managed to focus, follow and write notes.
 What did I do/learn today?
- Went into the depth of types of OS and how OS evolved with time. What is a process Memory blocks Process control blocks  Process control blocks in my opinion is not that simple topic. I have to give more time to such topics. Real-time operating systems (RTOS) and Embedded OS, attracted me a lot.</description>
-    </item>
-    
-    <item>
-      <title>Prajjwal Learns CS (Operating System)</title>
-      <link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system/</link>
-      <pubDate>Fri, 07 May 2021 08:41:38 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system/</guid>
-      <description>More than Computer Science itself, I am beginning a new phase of my journey, where now I will not write much code. However, it is all intended towards the theoretical aspect of the things I used to love. I am committing 5 to 6 hours a day on weekdays and a tiny to the blogs. The rest of the time will go to my major degree (Electrical Engineering).
-Many asked me why I am learning CS along with Electrical.</description>
-    </item>
-    
-    <item>
-      <title>An end and a start</title>
-      <link>https://pnijhara.github.io/2021/05/an-end-and-a-start/</link>
-      <pubDate>Thu, 06 May 2021 13:13:43 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2021/05/an-end-and-a-start/</guid>
-      <description>Writing this blog after a very long time. I was trying to complete my FastAPI journey and somewhat succeeded too. However, the aim was to create tutorials on each and every topic. Tried to create some of them. Introduction to API, JSON and XML along with HTTP methods and status codes went great. Areeb Jamal and Prateek Jain helped a lot in reviewing them. Some of the tutorials are still pending as drafts.</description>
-    </item>
-    
-    <item>
-      <title>HTTP Methods and Status Code</title>
-      <link>https://pnijhara.github.io/2020/08/http-methods-and-status-code/</link>
-      <pubDate>Tue, 18 Aug 2020 13:56:18 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/08/http-methods-and-status-code/</guid>
-      <description>Before we begin coding, we must know basics about internet, specifically communication with API. We already covered our basics about APIs in the previous blog on &amp;ldquo;What is API, JSON or XML?&amp;quot;. It is now time to cover HTTP.
-Communication between clients and server (which is our API) is done by HTTP(Hyper Text Transfer Protocol) requests and response. Every time client wants to perform some action on Database, it sends HTTP request to server and server in back respond by HTTP response.</description>
-    </item>
-    
-    <item>
-      <title>What is an API, JSON or XML?</title>
-      <link>https://pnijhara.github.io/2020/08/what-is-an-api-json-or-xml/</link>
-      <pubDate>Tue, 11 Aug 2020 10:00:02 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/08/what-is-an-api-json-or-xml/</guid>
-      <description>API1 or the Application Programming interface is the middlepoint between App2 and data or it is a gateway to DataBase.
+Went into the depth of types of OS and how OS evolved with time. What is a process Memory blocks Process control blocks Process control blocks in my opinion is not that simple topic. I have to give more time to such topics. Real-time operating systems (RTOS) and Embedded OS, attracted me a lot.</description></item><item><title>Prajjwal Learns CS (Operating System)</title><link>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system/</link><pubDate>Fri, 07 May 2021 08:41:38 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/prajjwal-learns-cs-operating-system/</guid><description>More than Computer Science itself, I am beginning a new phase of my journey, where now I will not write much code. However, it is all intended towards the theoretical aspect of the things I used to love. I am committing 5 to 6 hours a day on weekdays and a tiny to the blogs. The rest of the time will go to my major degree (Electrical Engineering).
+Many asked me why I am learning CS along with Electrical.</description></item><item><title>An end and a start</title><link>https://pnijhara.github.io/2021/05/an-end-and-a-start/</link><pubDate>Thu, 06 May 2021 13:13:43 +0530</pubDate><guid>https://pnijhara.github.io/2021/05/an-end-and-a-start/</guid><description>Writing this blog after a very long time. I was trying to complete my FastAPI journey and somewhat succeeded too. However, the aim was to create tutorials on each and every topic. Tried to create some of them. Introduction to API, JSON and XML along with HTTP methods and status codes went great. Areeb Jamal and Prateek Jain helped a lot in reviewing them. Some of the tutorials are still pending as drafts.</description></item><item><title>HTTP Methods and Status Code</title><link>https://pnijhara.github.io/2020/08/http-methods-and-status-code/</link><pubDate>Tue, 18 Aug 2020 13:56:18 +0530</pubDate><guid>https://pnijhara.github.io/2020/08/http-methods-and-status-code/</guid><description>Before we begin coding, we must know basics about internet, specifically communication with API. We already covered our basics about APIs in the previous blog on &amp;ldquo;What is API, JSON or XML?&amp;quot;. It is now time to cover HTTP.
+Communication between clients and server (which is our API) is done by HTTP(Hyper Text Transfer Protocol) requests and response. Every time client wants to perform some action on Database, it sends HTTP request to server and server in back respond by HTTP response.</description></item><item><title>What is an API, JSON or XML?</title><link>https://pnijhara.github.io/2020/08/what-is-an-api-json-or-xml/</link><pubDate>Tue, 11 Aug 2020 10:00:02 +0530</pubDate><guid>https://pnijhara.github.io/2020/08/what-is-an-api-json-or-xml/</guid><description>API1 or the Application Programming interface is the middlepoint between App2 and data or it is a gateway to DataBase.
 API governs the access point(s) for the server, that means instead of directly sending request to DataBase, API checks your identity and type of request and pass it through some logic filter and then reflect your request/change to the DataBase.
-From the above diagram you can clearly see that, every request passes through a middleware(API) and then API performs some action/ checks validation and pass your request to DataBase to let it give you your desired response.</description>
-    </item>
-    
-    <item>
-      <title>Announcement: Python Backend blog series with FastAPI</title>
-      <link>https://pnijhara.github.io/2020/08/announcement-python-backend-blog-series-with-fastapi/</link>
-      <pubDate>Mon, 10 Aug 2020 20:56:52 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/08/announcement-python-backend-blog-series-with-fastapi/</guid>
-      <description>Perhaps more than any other language, Python has established itself as a solid tool to do almost anything. Where Python really shines, however, is in its various packages that extend the language into hundreds of use cases.
-With this, this blog series will focus on building a strong and easily maintainable API with FastAPI framework of Python. I&amp;rsquo;ll be specifically focusing on best practices that every developer should must follow.</description>
-    </item>
-    
-    <item>
-      <title>Web Scraping with Nodejs | Building an IMDb Scraper</title>
-      <link>https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/</link>
-      <pubDate>Mon, 29 Jun 2020 21:53:16 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/</guid>
-      <description>NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
- In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs.</description>
-    </item>
-    
-    <item>
-      <title>Unpopular Opinion: LinkedIn is not Facebook!</title>
-      <link>https://pnijhara.github.io/2020/06/unpopular-opinion-linkedin-is-not-facebook/</link>
-      <pubDate>Wed, 24 Jun 2020 12:00:23 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/06/unpopular-opinion-linkedin-is-not-facebook/</guid>
-      <description>Joke of the day: People posting their Yoga videos on LinkedIn.
+From the above diagram you can clearly see that, every request passes through a middleware(API) and then API performs some action/ checks validation and pass your request to DataBase to let it give you your desired response.</description></item><item><title>Announcement: Python Backend blog series with FastAPI</title><link>https://pnijhara.github.io/2020/08/announcement-python-backend-blog-series-with-fastapi/</link><pubDate>Mon, 10 Aug 2020 20:56:52 +0530</pubDate><guid>https://pnijhara.github.io/2020/08/announcement-python-backend-blog-series-with-fastapi/</guid><description>Perhaps more than any other language, Python has established itself as a solid tool to do almost anything. Where Python really shines, however, is in its various packages that extend the language into hundreds of use cases.
+With this, this blog series will focus on building a strong and easily maintainable API with FastAPI framework of Python. I&amp;rsquo;ll be specifically focusing on best practices that every developer should must follow.</description></item><item><title>Web Scraping with Nodejs | Building an IMDb Scraper</title><link>https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/</link><pubDate>Mon, 29 Jun 2020 21:53:16 +0530</pubDate><guid>https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/</guid><description>NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
+In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs.</description></item><item><title>Unpopular Opinion: LinkedIn is not Facebook!</title><link>https://pnijhara.github.io/2020/06/unpopular-opinion-linkedin-is-not-facebook/</link><pubDate>Wed, 24 Jun 2020 12:00:23 +0530</pubDate><guid>https://pnijhara.github.io/2020/06/unpopular-opinion-linkedin-is-not-facebook/</guid><description>Joke of the day: People posting their Yoga videos on LinkedIn.
 Joke of the week: People posting Father&amp;rsquo;s Day wishes on LinkedIn
 Joke of the century: People posting certificates!
-What is the key difference between Facebook &amp;amp; LinkedIn? As much as it&amp;rsquo;s convenient to merge our Facebook, Twitter, Tumblr and Instagram accounts into one large social networking experience, LinkedIn has a special designation: professional networking. And there is a difference between professional and personal networking.</description>
-    </item>
-    
-    <item>
-      <title>Semester 2 Report</title>
-      <link>https://pnijhara.github.io/2020/05/semester-2-report/</link>
-      <pubDate>Sun, 10 May 2020 03:31:58 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/05/semester-2-report/</guid>
-      <description>Followed by semester 1 and the holidays in which I tried to learn web development using Django. My experience with Django was not that good. As a beginner, the first thing I did was surfing over the internet for the framework to start with web development. After lurking around for a while and taking a glimpse over the documentation of both the frameworks (Django &amp;amp; Flask), I found Flask to be very straightforward.</description>
-    </item>
-    
-    <item>
-      <title>Semester 1 Report</title>
-      <link>https://pnijhara.github.io/2020/01/semester-1-report/</link>
-      <pubDate>Thu, 09 Jan 2020 21:29:12 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/01/semester-1-report/</guid>
-      <description>Aligarh Muslim University, the university I chose to pursue my bachelor&amp;rsquo;s degree. It was not an easy decision, but somehow I managed to get in there. Electrical Engineering was never on my list, but when you are unable to get your dream branch you have to be satisfied with what your faith is. So, here I am studying Electrical Engineering at AMU.
-First month, away from home was like jumping straight into hell.</description>
-    </item>
-    
-    <item>
-      <title>Journey to SIH-19</title>
-      <link>https://pnijhara.github.io/2020/01/journey-to-sih-19/</link>
-      <pubDate>Sat, 04 Jan 2020 02:50:26 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/01/journey-to-sih-19/</guid>
-      <description>&lt;p&gt;This blog is all about the steps which I and my team &lt;strong&gt;Narcodes&lt;/strong&gt; took for getting selected in the SIH-19 software edition. Along with the steps we took, this blog also covers the points/steps which were mandatory for each team. Hence, the following blog aims for making the journey for SIH-2020 a bit easy for the new teams.&lt;/p&gt;
-&lt;p&gt;Well, the journey for SIH-19 started with the formation of a team. The team consisted of 6 members from the same college. However, each team was asked to have a female member and a leader. Next, we encoutered our first task to select a problem statement to work on and choose the right problem from tons of problems which was quite a difficult task!&lt;/p&gt;
-&lt;p&gt;Then came the team registration step and we got our team registered. The team registration step was also not a simple task. The team was registered by the team leader on the SIH-19 website. Moreover, the team&amp;rsquo;s registration got the green signal only when the SPOC (Single Point of Contact) gave his approval to the team. Hence, it was the duty of the team to submit their team members&amp;rsquo; information forwarded by the Head of the college to the SPOC.&lt;/p&gt;
-&lt;p&gt;Last and the important step was to write the SOP for the problem statements which were approved by the SPOC(based on an internal hackathon, where each team was asked to give a pitch on there SOP) before submitting it to the  SIH-19&amp;rsquo;s SOP submission portal.&lt;/p&gt;
-&lt;p&gt;So, to summarize the whole process, let us break it into points&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Team formation&lt;/li&gt;
-&lt;li&gt;Choosing the right problem statements&lt;/li&gt;
-&lt;li&gt;Team Registration
-&lt;ol&gt;
-&lt;li&gt;Team registration by the team leader&lt;/li&gt;
-&lt;li&gt;Contact SPOC&lt;/li&gt;
-&lt;li&gt;Approval by SPOC&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Internal Hackathon
-&lt;ol&gt;
-&lt;li&gt;SOP&lt;/li&gt;
-&lt;li&gt;Pitch&lt;/li&gt;
-&lt;li&gt;Submission of SOP by the team leader&lt;/li&gt;
-&lt;li&gt;Approval by  SPOC&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: I am not sure that whether these steps would be followed for SIH-2020 nor I am sure about the upcoming internal Hackthon procedure. They may get change this year. For more information please visit &lt;a href=&#34;https://www.sih.gov.in/about&#34;&gt;SIH-2020 website&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
-      <title>Hugo vs Jekyll: A comparison based on personal usage</title>
-      <link>https://pnijhara.github.io/2020/01/hugo-vs-jekyll-a-comparison-based-on-personal-usage/</link>
-      <pubDate>Wed, 01 Jan 2020 10:29:28 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/01/hugo-vs-jekyll-a-comparison-based-on-personal-usage/</guid>
-      <description>Well, I am not writing this blog because I have used Hugo for making my website. It is just that I wanted to compare the powers of Hugo and Jekyll. There is a whole list of static site generators you can use and some of them are listed here. However, I am just comparing these 2 as they are widely used.
- NOTE: I too don&amp;rsquo;t know why I chose Hugo over Jekyll for making this website.</description>
-    </item>
-    
-    <item>
-      <title>ROC &amp; Special Thanks</title>
-      <link>https://pnijhara.github.io/2019/12/roc-special-thanks/</link>
-      <pubDate>Fri, 27 Dec 2019 14:37:54 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2019/12/roc-special-thanks/</guid>
-      <description>Special thanks to events that occurred during this semester and a special thanks to the people who came and left from my life. Those events and people created an unwanted strong impact on my life and taught me how to live life and how to inspire yourself. Though, because of them, I could have easily made my life a misery which I almost did. However, a resolution and special event stopped me to that.</description>
-    </item>
-    
-    <item>
-      <title>Announcement</title>
-      <link>https://pnijhara.github.io/2019/12/announcement/</link>
-      <pubDate>Tue, 24 Dec 2019 23:39:06 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2019/12/announcement/</guid>
-      <description>&lt;p&gt;Started this blogging website to summarize my learning weekly. However, due to some social issues and college work, I was not able to keep up the work. A list that I prepared for learning and writing was not followed by me. Though now I cannot summarize the whole semester learnings weekly, I decided to summarize them semester wise till now. Starting from my journey to college that is from 1st semester to 3rd semester. The three blog series will cover almost all the topics from starting my journey at Aligarh Muslim Unversity to me as a 3rd semester studying Electrical Engineering student, from technical learnings to life lessons, from hackathons to club etc.&lt;/p&gt;
-&lt;p&gt;Apart from that, I will be resuming my weekly writings from 2020. Hope that would be a great start.&lt;/p&gt;
-&lt;p&gt;Also, I have removed links of Instagram and facebook from this website as I am not continuing them. You can connect me on the mail or via twitter.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Religion</title>
-      <link>https://pnijhara.github.io/2019/09/religion/</link>
-      <pubDate>Sun, 08 Sep 2019 01:37:51 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2019/09/religion/</guid>
-      <description>Recently I got the privilege to write an article for a non-governmental organisation named @lovenation_hme of Indian Institute of Law, Indore. The organisation aims to create unity among religions as being the responsible and literate citizens of India. The organisation also states that &amp;ldquo;India is ours and we are proud citizens of India&amp;rdquo;.
-Article Religion is supposed to be the means of attaining peace but in practicality, in reality, today every religion has got a base of fundamentalism and involvement of terrorism.</description>
-    </item>
-    
-    <item>
-      <title>Uncovered points associated with Hugo</title>
-      <link>https://pnijhara.github.io/2019/08/uncovered-points-associated-with-hugo/</link>
-      <pubDate>Tue, 20 Aug 2019 01:09:28 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2019/08/uncovered-points-associated-with-hugo/</guid>
-      <description>In the last article, I tried to cover almost every point required for creating your blog. However, there are still some points left which remain uncovered in the previous section.
+What is the key difference between Facebook &amp;amp; LinkedIn? As much as it&amp;rsquo;s convenient to merge our Facebook, Twitter, Tumblr and Instagram accounts into one large social networking experience, LinkedIn has a special designation: professional networking. And there is a difference between professional and personal networking.</description></item><item><title>Semester 2 Report</title><link>https://pnijhara.github.io/2020/05/semester-2-report/</link><pubDate>Sun, 10 May 2020 03:31:58 +0530</pubDate><guid>https://pnijhara.github.io/2020/05/semester-2-report/</guid><description>Followed by semester 1 and the holidays in which I tried to learn web development using Django. My experience with Django was not that good. As a beginner, the first thing I did was surfing over the internet for the framework to start with web development. After lurking around for a while and taking a glimpse over the documentation of both the frameworks (Django &amp;amp; Flask), I found Flask to be very straightforward.</description></item><item><title>Semester 1 Report</title><link>https://pnijhara.github.io/2020/01/semester-1-report/</link><pubDate>Thu, 09 Jan 2020 21:29:12 +0530</pubDate><guid>https://pnijhara.github.io/2020/01/semester-1-report/</guid><description>Aligarh Muslim University, the university I chose to pursue my bachelor&amp;rsquo;s degree. It was not an easy decision, but somehow I managed to get in there. Electrical Engineering was never on my list, but when you are unable to get your dream branch you have to be satisfied with what your faith is. So, here I am studying Electrical Engineering at AMU.
+First month, away from home was like jumping straight into hell.</description></item><item><title>Journey to SIH-19</title><link>https://pnijhara.github.io/2020/01/journey-to-sih-19/</link><pubDate>Sat, 04 Jan 2020 02:50:26 +0530</pubDate><guid>https://pnijhara.github.io/2020/01/journey-to-sih-19/</guid><description>&lt;p>This blog is all about the steps which I and my team &lt;strong>Narcodes&lt;/strong> took for getting selected in the SIH-19 software edition. Along with the steps we took, this blog also covers the points/steps which were mandatory for each team. Hence, the following blog aims for making the journey for SIH-2020 a bit easy for the new teams.&lt;/p>
+&lt;p>Well, the journey for SIH-19 started with the formation of a team. The team consisted of 6 members from the same college. However, each team was asked to have a female member and a leader. Next, we encoutered our first task to select a problem statement to work on and choose the right problem from tons of problems which was quite a difficult task!&lt;/p>
+&lt;p>Then came the team registration step and we got our team registered. The team registration step was also not a simple task. The team was registered by the team leader on the SIH-19 website. Moreover, the team&amp;rsquo;s registration got the green signal only when the SPOC (Single Point of Contact) gave his approval to the team. Hence, it was the duty of the team to submit their team members' information forwarded by the Head of the college to the SPOC.&lt;/p>
+&lt;p>Last and the important step was to write the SOP for the problem statements which were approved by the SPOC(based on an internal hackathon, where each team was asked to give a pitch on there SOP) before submitting it to the SIH-19&amp;rsquo;s SOP submission portal.&lt;/p>
+&lt;p>So, to summarize the whole process, let us break it into points&lt;/p>
+&lt;ol>
+&lt;li>Team formation&lt;/li>
+&lt;li>Choosing the right problem statements&lt;/li>
+&lt;li>Team Registration
+&lt;ol>
+&lt;li>Team registration by the team leader&lt;/li>
+&lt;li>Contact SPOC&lt;/li>
+&lt;li>Approval by SPOC&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Internal Hackathon
+&lt;ol>
+&lt;li>SOP&lt;/li>
+&lt;li>Pitch&lt;/li>
+&lt;li>Submission of SOP by the team leader&lt;/li>
+&lt;li>Approval by SPOC&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>NOTE: I am not sure that whether these steps would be followed for SIH-2020 nor I am sure about the upcoming internal Hackthon procedure. They may get change this year. For more information please visit &lt;a href="https://www.sih.gov.in/about">SIH-2020 website&lt;/a>.&lt;/p>
+&lt;/blockquote></description></item><item><title>Hugo vs Jekyll: A comparison based on personal usage</title><link>https://pnijhara.github.io/2020/01/hugo-vs-jekyll-a-comparison-based-on-personal-usage/</link><pubDate>Wed, 01 Jan 2020 10:29:28 +0530</pubDate><guid>https://pnijhara.github.io/2020/01/hugo-vs-jekyll-a-comparison-based-on-personal-usage/</guid><description>Well, I am not writing this blog because I have used Hugo for making my website. It is just that I wanted to compare the powers of Hugo and Jekyll. There is a whole list of static site generators you can use and some of them are listed here. However, I am just comparing these 2 as they are widely used.
+NOTE: I too don&amp;rsquo;t know why I chose Hugo over Jekyll for making this website.</description></item><item><title>ROC &amp; Special Thanks</title><link>https://pnijhara.github.io/2019/12/roc-special-thanks/</link><pubDate>Fri, 27 Dec 2019 14:37:54 +0530</pubDate><guid>https://pnijhara.github.io/2019/12/roc-special-thanks/</guid><description>Special thanks to events that occurred during this semester and a special thanks to the people who came and left from my life. Those events and people created an unwanted strong impact on my life and taught me how to live life and how to inspire yourself. Though, because of them, I could have easily made my life a misery which I almost did. However, a resolution and special event stopped me to that.</description></item><item><title>Announcement</title><link>https://pnijhara.github.io/2019/12/announcement/</link><pubDate>Tue, 24 Dec 2019 23:39:06 +0530</pubDate><guid>https://pnijhara.github.io/2019/12/announcement/</guid><description>&lt;p>Started this blogging website to summarize my learning weekly. However, due to some social issues and college work, I was not able to keep up the work. A list that I prepared for learning and writing was not followed by me. Though now I cannot summarize the whole semester learnings weekly, I decided to summarize them semester wise till now. Starting from my journey to college that is from 1st semester to 3rd semester. The three blog series will cover almost all the topics from starting my journey at Aligarh Muslim Unversity to me as a 3rd semester studying Electrical Engineering student, from technical learnings to life lessons, from hackathons to club etc.&lt;/p>
+&lt;p>Apart from that, I will be resuming my weekly writings from 2020. Hope that would be a great start.&lt;/p>
+&lt;p>Also, I have removed links of Instagram and facebook from this website as I am not continuing them. You can connect me on the mail or via twitter.&lt;/p></description></item><item><title>Religion</title><link>https://pnijhara.github.io/2019/09/religion/</link><pubDate>Sun, 08 Sep 2019 01:37:51 +0530</pubDate><guid>https://pnijhara.github.io/2019/09/religion/</guid><description>Recently I got the privilege to write an article for a non-governmental organisation named @lovenation_hme of Indian Institute of Law, Indore. The organisation aims to create unity among religions as being the responsible and literate citizens of India. The organisation also states that &amp;ldquo;India is ours and we are proud citizens of India&amp;rdquo;.
+Article Religion is supposed to be the means of attaining peace but in practicality, in reality, today every religion has got a base of fundamentalism and involvement of terrorism.</description></item><item><title>Uncovered points associated with Hugo</title><link>https://pnijhara.github.io/2019/08/uncovered-points-associated-with-hugo/</link><pubDate>Tue, 20 Aug 2019 01:09:28 +0530</pubDate><guid>https://pnijhara.github.io/2019/08/uncovered-points-associated-with-hugo/</guid><description>In the last article, I tried to cover almost every point required for creating your blog. However, there are still some points left which remain uncovered in the previous section.
 This article will cover those points which I feel are not covered in the official documentation or if covered are not much focussed in there quick start guide.
-Point 1 Most of the time I read questions on the internet of people asking that even after creating or copying the config.</description>
-    </item>
-    
-    <item>
-      <title>Create your own blog in 30 minutes using Hugo, a static site generator written in Go</title>
-      <link>https://pnijhara.github.io/2019/08/create-your-own-blog-in-30-minutes-using-hugo-a-static-site-generator-written-in-go/</link>
-      <pubDate>Tue, 06 Aug 2019 17:18:26 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2019/08/create-your-own-blog-in-30-minutes-using-hugo-a-static-site-generator-written-in-go/</guid>
-      <description>Do you know you can create your blog without any knowledge of content management system or actual knowledge of creating a website, setting it, styling it or improving it? Well, you can with the world’s fastest framework for building websites that is Hugo
+Point 1 Most of the time I read questions on the internet of people asking that even after creating or copying the config.</description></item><item><title>Create your own blog in 30 minutes using Hugo, a static site generator written in Go</title><link>https://pnijhara.github.io/2019/08/create-your-own-blog-in-30-minutes-using-hugo-a-static-site-generator-written-in-go/</link><pubDate>Tue, 06 Aug 2019 17:18:26 +0530</pubDate><guid>https://pnijhara.github.io/2019/08/create-your-own-blog-in-30-minutes-using-hugo-a-static-site-generator-written-in-go/</guid><description>Do you know you can create your blog without any knowledge of content management system or actual knowledge of creating a website, setting it, styling it or improving it? Well, you can with the world’s fastest framework for building websites that is Hugo
 Before going forward it is suggested that you must have an account on Github for hosting your blog.
-Why Hugo?   Hugo is the fastest tool of its kind.</description>
-    </item>
-    
-    <item>
-      <title>Hello</title>
-      <link>https://pnijhara.github.io/2019/07/hello/</link>
-      <pubDate>Fri, 26 Jul 2019 16:43:08 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2019/07/hello/</guid>
-      <description>&lt;p&gt;I decided to gift myself a new blog and here is the result :)&lt;/p&gt;
-&lt;p&gt;This blog was created on Hugo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://pnijhara.github.io/about/</link>
-      <pubDate>Mon, 22 Jul 2019 00:18:53 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/about/</guid>
-      <description>I am Prajjwal Nijhara (~ PNIJHARA). I am currently studying Electrical Engineering at Zakir Husain College of Engineering and Technology Aligarh Muslim University.
-Though I love to try new technologies however I love to work on python programming. I love to work on team projects but when it comes with personal coding I try to learn new stuff, anywhere from creating API to trying new frameworks to reading about new tech.</description>
-    </item>
-    
-  </channel>
-</rss>
+Why Hugo? Hugo is the fastest tool of its kind.</description></item><item><title>Hello</title><link>https://pnijhara.github.io/2019/07/hello/</link><pubDate>Fri, 26 Jul 2019 16:43:08 +0530</pubDate><guid>https://pnijhara.github.io/2019/07/hello/</guid><description>&lt;p>I decided to gift myself a new blog and here is the result :)&lt;/p>
+&lt;p>This blog was created on Hugo.&lt;/p></description></item><item><title>About Me</title><link>https://pnijhara.github.io/about/</link><pubDate>Mon, 22 Jul 2019 00:18:53 +0530</pubDate><guid>https://pnijhara.github.io/about/</guid><description>I am Prajjwal Nijhara (~ PNIJHARA). I am currently studying Electrical Engineering at Zakir Husain College of Engineering and Technology Aligarh Muslim University.
+Though I love to try new technologies however I love to work on python programming. I love to work on team projects but when it comes with personal coding I try to learn new stuff, anywhere from creating API to trying new frameworks to reading about new tech.</description></item></channel></rss>

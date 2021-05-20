@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Future on pnijhara&#39;s blog</title>
-    <link>https://pnijhara.github.io/categories/future/</link>
-    <description>Recent content in Future on pnijhara&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 24 Dec 2019 23:39:06 +0530</lastBuildDate>
-    
-	<atom:link href="https://pnijhara.github.io/categories/future/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Announcement</title>
-      <link>https://pnijhara.github.io/2019/12/announcement/</link>
-      <pubDate>Tue, 24 Dec 2019 23:39:06 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2019/12/announcement/</guid>
-      <description>&lt;p&gt;Started this blogging website to summarize my learning weekly. However, due to some social issues and college work, I was not able to keep up the work. A list that I prepared for learning and writing was not followed by me. Though now I cannot summarize the whole semester learnings weekly, I decided to summarize them semester wise till now. Starting from my journey to college that is from 1st semester to 3rd semester. The three blog series will cover almost all the topics from starting my journey at Aligarh Muslim Unversity to me as a 3rd semester studying Electrical Engineering student, from technical learnings to life lessons, from hackathons to club etc.&lt;/p&gt;
-&lt;p&gt;Apart from that, I will be resuming my weekly writings from 2020. Hope that would be a great start.&lt;/p&gt;
-&lt;p&gt;Also, I have removed links of Instagram and facebook from this website as I am not continuing them. You can connect me on the mail or via twitter.&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Future on pnijhara's blog</title><link>https://pnijhara.github.io/categories/future/</link><description>Recent content in Future on pnijhara's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 24 Dec 2019 23:39:06 +0530</lastBuildDate><atom:link href="https://pnijhara.github.io/categories/future/index.xml" rel="self" type="application/rss+xml"/><item><title>Announcement</title><link>https://pnijhara.github.io/2019/12/announcement/</link><pubDate>Tue, 24 Dec 2019 23:39:06 +0530</pubDate><guid>https://pnijhara.github.io/2019/12/announcement/</guid><description>&lt;p>Started this blogging website to summarize my learning weekly. However, due to some social issues and college work, I was not able to keep up the work. A list that I prepared for learning and writing was not followed by me. Though now I cannot summarize the whole semester learnings weekly, I decided to summarize them semester wise till now. Starting from my journey to college that is from 1st semester to 3rd semester. The three blog series will cover almost all the topics from starting my journey at Aligarh Muslim Unversity to me as a 3rd semester studying Electrical Engineering student, from technical learnings to life lessons, from hackathons to club etc.&lt;/p>
+&lt;p>Apart from that, I will be resuming my weekly writings from 2020. Hope that would be a great start.&lt;/p>
+&lt;p>Also, I have removed links of Instagram and facebook from this website as I am not continuing them. You can connect me on the mail or via twitter.&lt;/p></description></item></channel></rss>

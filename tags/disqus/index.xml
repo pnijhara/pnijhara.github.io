@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>disqus on pnijhara&#39;s blog</title>
-    <link>https://pnijhara.github.io/tags/disqus/</link>
-    <description>Recent content in disqus on pnijhara&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jul 2019 16:43:08 +0530</lastBuildDate>
-    
-	<atom:link href="https://pnijhara.github.io/tags/disqus/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Hello</title>
-      <link>https://pnijhara.github.io/2019/07/hello/</link>
-      <pubDate>Fri, 26 Jul 2019 16:43:08 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2019/07/hello/</guid>
-      <description>&lt;p&gt;I decided to gift myself a new blog and here is the result :)&lt;/p&gt;
-&lt;p&gt;This blog was created on Hugo.&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>disqus on pnijhara's blog</title><link>https://pnijhara.github.io/tags/disqus/</link><description>Recent content in disqus on pnijhara's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Jul 2019 16:43:08 +0530</lastBuildDate><atom:link href="https://pnijhara.github.io/tags/disqus/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello</title><link>https://pnijhara.github.io/2019/07/hello/</link><pubDate>Fri, 26 Jul 2019 16:43:08 +0530</pubDate><guid>https://pnijhara.github.io/2019/07/hello/</guid><description>&lt;p>I decided to gift myself a new blog and here is the result :)&lt;/p>
+&lt;p>This blog was created on Hugo.&lt;/p></description></item></channel></rss>

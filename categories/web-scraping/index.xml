@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Web-scraping on pnijhara&#39;s blog</title>
-    <link>https://pnijhara.github.io/categories/web-scraping/</link>
-    <description>Recent content in Web-scraping on pnijhara&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jun 2020 21:53:16 +0530</lastBuildDate>
-    
-	<atom:link href="https://pnijhara.github.io/categories/web-scraping/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Web Scraping with Nodejs | Building an IMDb Scraper</title>
-      <link>https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/</link>
-      <pubDate>Mon, 29 Jun 2020 21:53:16 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/</guid>
-      <description>NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
- In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web-scraping on pnijhara's blog</title><link>https://pnijhara.github.io/categories/web-scraping/</link><description>Recent content in Web-scraping on pnijhara's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 29 Jun 2020 21:53:16 +0530</lastBuildDate><atom:link href="https://pnijhara.github.io/categories/web-scraping/index.xml" rel="self" type="application/rss+xml"/><item><title>Web Scraping with Nodejs | Building an IMDb Scraper</title><link>https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/</link><pubDate>Mon, 29 Jun 2020 21:53:16 +0530</pubDate><guid>https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/</guid><description>NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
+In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs.</description></item></channel></rss>

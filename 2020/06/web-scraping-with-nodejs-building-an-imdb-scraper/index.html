@@ -1,763 +1,111 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Hugo 0.74.3 with theme Tranquilpeak 0.4.8-BETA">
-<meta name="author" content="Prajjwal Nijhara">
-<meta name="keywords" content="tech, Prajjwal Nijhara, pnijhara, The pnijhara Blog, The official blog of Prajjwal Nijhara">
-<meta name="description" content="NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
- In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs.">
-
-
-<meta property="og:description" content="NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
- In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Web Scraping with Nodejs | Building an IMDb Scraper">
-<meta name="twitter:title" content="Web Scraping with Nodejs | Building an IMDb Scraper">
-<meta property="og:url" content="https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/">
-<meta property="twitter:url" content="https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/">
-<meta property="og:site_name" content="pnijhara&#39;s blog">
-<meta property="og:description" content="NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
- In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs.">
-<meta name="twitter:description" content="NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
- In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs.">
-<meta property="og:locale" content="en-us">
-
-  
-    <meta property="article:published_time" content="2020-06-29T21:53:16">
-  
-  
-    <meta property="article:modified_time" content="2020-06-29T21:53:16">
-  
-  
-  
-    
-      <meta property="article:section" content="Random discovery">
-    
-      <meta property="article:section" content="Web-scraping">
-    
-  
-  
-    
-      <meta property="article:tag" content="Nodejs">
-    
-      <meta property="article:tag" content="techcodemonk">
-    
-      <meta property="article:tag" content="web-scraping">
-    
-      <meta property="article:tag" content="IMDb">
-    
-  
-
-
-<meta name="twitter:card" content="summary">
-
-  <meta name="twitter:site" content="@NijharaPrajjwal">
-
-
-  <meta name="twitter:creator" content="@NijharaPrajjwal">
-
-
-
-
-
-
-  <meta property="og:image" content="https://www.techcodemonk.in/wp-content/uploads/2020/01/christopher-gower-m_HRfLhgABo-unsplash-1170x610.jpg">
-  <meta property="twitter:image" content="https://www.techcodemonk.in/wp-content/uploads/2020/01/christopher-gower-m_HRfLhgABo-unsplash-1170x610.jpg">
-
-
-  <meta property="og:image" content="https://www.techcodemonk.in/wp-content/uploads/2020/01/christopher-gower-m_HRfLhgABo-unsplash-1170x610.jpg">
-  <meta property="twitter:image" content="https://www.techcodemonk.in/wp-content/uploads/2020/01/christopher-gower-m_HRfLhgABo-unsplash-1170x610.jpg">
-
-
-
-
-  <meta property="og:image" content="https://pnijhara.github.io/img/profile/pnijhara.jpg">
-  <meta property="twitter:image" content="https://pnijhara.github.io/img/profile/pnijhara.jpg">
-
-
-    <title>Web Scraping with Nodejs | Building an IMDb Scraper</title>
-
-    <link rel="icon" href="img/favicon.png">
-    
-
-    
-
-    <link rel="canonical" href="https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/">
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
-    
-    
-    <link rel="stylesheet" href="https://pnijhara.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
-    
-    
-
-    
-      
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-144251498-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-
-    
-    
-  </head>
-
-  <body>
-    <div id="blog">
-      <header id="header" data-behavior="5">
-  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
-  <div class="header-title">
-    <a class="header-title-link" href="https://pnijhara.github.io/">pnijhara&#39;s blog</a>
-  </div>
-  
-    
-      <a class="header-right-picture "
-         href="https://pnijhara.github.io/about">
-    
-    
-    
-      
-        <img class="header-picture" src="https://pnijhara.github.io/img/profile/pnijhara.jpg" alt="Author&#39;s picture" />
-      
-    
-    </a>
-  
-</header>
-
-      <nav id="sidebar" data-behavior="5">
-  <div class="sidebar-container">
-    
-      <div class="sidebar-profile">
-        <a href="https://pnijhara.github.io/#about">
-          <img class="sidebar-profile-picture" src="https://pnijhara.github.io/img/profile/pnijhara.jpg" alt="Author&#39;s picture" />
-        </a>
-        <h4 class="sidebar-profile-name">Prajjwal Nijhara</h4>
-        
-          <h5 class="sidebar-profile-bio">Open Source Enthusiast | Blogger | Speed Cuber | Hockey | Chess</h5>
-        
-      </div>
-    
-    <ul class="sidebar-buttons">
-      
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://pnijhara.github.io/">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-      
-      <span class="sidebar-button-desc">Home</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://pnijhara.github.io/about">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-user-circle"></i>
-      
-      <span class="sidebar-button-desc">About</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://pnijhara.github.io/tags">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-      
-      <span class="sidebar-button-desc">Tags</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://pnijhara.github.io/archives">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-      
-      <span class="sidebar-button-desc">Archives</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://pnijhara.github.io/categories">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-      
-      <span class="sidebar-button-desc">Categories</span>
-    </a>
-  </li>
-
-
-    </ul>
-    <ul class="sidebar-buttons">
-      
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://github.com/pnijhara" target="_blank" rel="noopener">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
-      
-      <span class="sidebar-button-desc">GitHub</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://www.linkedin.com/in/nijharaprajjwal/" target="_blank" rel="noopener">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
-      
-      <span class="sidebar-button-desc">Linkedin</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://twitter.com/NijharaPrajjwal" target="_blank" rel="noopener">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
-      
-      <span class="sidebar-button-desc">Twitter</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="mailto:prajjwalnijhara@gmail.com" target="_blank" rel="noopener">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-envelope-open"></i>
-      
-      <span class="sidebar-button-desc">Email</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://tinyletter.com/pnijhara" target="_blank" rel="noopener">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-rocket"></i>
-      
-      <span class="sidebar-button-desc">Newsletter</span>
-    </a>
-  </li>
-
-
-    </ul>
-    <ul class="sidebar-buttons">
-      
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="https://pnijhara.github.io/index.xml">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
-      
-      <span class="sidebar-button-desc">RSS</span>
-    </a>
-  </li>
-
-
-    </ul>
-  </div>
-</nav>
-
-      
-  <div class="post-header-cover
-              text-center
-              "
-       style="background-image:url('https://www.techcodemonk.in/wp-content/uploads/2020/01/christopher-gower-m_HRfLhgABo-unsplash-1170x610.jpg')"
-       data-behavior="5">
-    
-  </div>
-
-
-      <div id="main" data-behavior="5"
-        class="hasCover
-               hasCoverMetaOut
-               ">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
-          
-          
-            <div class="post-header main-content-wrap text-center">
-  
-    <h1 class="post-title" itemprop="headline">
-      Web Scraping with Nodejs | Building an IMDb Scraper
-    </h1>
-  
-  
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2020-06-29T21:53:16&#43;05:30">
-        
-  June 29, 2020
-
-      </time>
-    
-    
-  
-  
-    <span>in</span>
-    
-      <a class="category-link" href="https://pnijhara.github.io/categories/random-discovery">Random discovery</a>, 
-    
-      <a class="category-link" href="https://pnijhara.github.io/categories/web-scraping">Web-scraping</a>
-    
-  
-
-  </div>
-
-</div>
-          
-          <div class="post-content markdown" itemprop="articleBody">
-            <div class="main-content-wrap">
-              <blockquote>
-<p>NOTE : This post originally appeared on <a href="https://techcodemonk.in">techcodemonk.in</a>, and has been posted here with due permission</p>
-</blockquote>
-<p>In continuation with the blog <a href="https://www.techcodemonk.in/2020/01/18/web-scraping-with-python-building-an-imdb-scraper/">Web Scrapping with Python</a> by <a href="https://www.techcodemonk.in/author/skahmed1420/">Kamran</a> which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs.</p>
-<blockquote>
-<p>CAUTION: Web scraping stands on the border of both legal and illegal actions as web scraping is the technique to extract data from a website (a data may be under a copyright). This blog thus is just for education purpose and we are not using the scraped data for any other purpose.</p>
-</blockquote>
-<h2 id="aim">Aim</h2>
-<p>We will be building an IMDB web scraper that will loop through a list of IMDB movie links. From there we will be extracting data such as the title of the movie/show, rating and summary and save the extracted data in a CSV file.</p>
-<h2 id="dependencies-required">Dependencies required</h2>
-<p>As you know there are tons of tools available for a single task at npm but we will be using the most widely used tools that are maintained by an active community.</p>
-<ul>
-<li><a href="https://nodejs.org/">Nodejs</a> (not a package but a basic prerequisite)</li>
-<li><a href="https://www.npmjs.com/package/cheerio">Cheerio</a> to make the code looks like jQuery (we can perform our task without cheerio also, however, we are more focused on making our code look clean and good)</li>
-<li><a href="https://www.npmjs.com/package/request">Request</a> to make http calls that will help us fetch the contents of the website (Note: Request package as what npm says is depreciated from 11th of Feb, 2020)</li>
-<li><a href="https://www.npmjs.com/package/request-promise">Request-promise</a> is a request based package which we will be using along with Request package. (You can also use request-promise-native or request-promise-any but keeping the stuff simple we will be using request-promise)</li>
-<li><a href="https://www.npmjs.com/package/json2csv">Json2csv</a> to convert our JSON output data to a CSV file. Other packages such as jsonexport or object-to-csv can also be used.</li>
-</ul>
-<h2 id="extracting-data-using-dev-tools">Extracting data using dev tools</h2>
-<p>We will first look for the IMDB and try to extract some useful information which we will be using to make our scraper.</p>
-<p><img src="https://www.techcodemonk.in/wp-content/uploads/2020/06/techcodemonk_blog1-1024x506.png" alt=""></p>
-<p>Here in the above image, you can clearly see that the title of the movie wrapped under a <code>div</code> tag which has a class that is <code>class=&quot;title_wrapper&quot;</code> which is followed by a child <code>h1</code> tag which has the title of the movie.</p>
-<blockquote>
-<p>NOTE: I am using Firefox browser but you can use any other browser such as Chrome. For inspecting elements and using Firefox dev tools you need to just right click on that element and choose inspect element option or just use ctrl + shift + c on your keyboard.</p>
-</blockquote>
-<p>Let us now use the above information to extract the title of the movie. We will be using browser&rsquo;s console for this and jQuery syntax.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div[class=&#34;title_wrapper&#34;] &gt; h1&#39;</span>).<span style="color:#a6e22e">text</span>().<span style="color:#a6e22e">trim</span>()
-</code></pre></div><pre><code class="language-javacript" data-lang="javacript">Output: &quot;Joker (2019)&quot;
-</code></pre><p><img src="https://www.techcodemonk.in/wp-content/uploads/2020/06/techcodemonk_blog2-1024x507.png" alt=""></p>
-<p>Let us understand the syntax. Here we are calling every <code>div</code> tag which has class as &ldquo;title_wrapper&rdquo; followed by a child <code>h1</code> tag. Later we are extracting <strong>trimmed text</strong> from it. Why trimmed? Because sometimes additional spaces can be there in the text which we do not want in our CSV file. Thus I highly recommend you to use <code>trim()</code>, however, the above command can also work without it as we are only focussed on the text.</p>
-<p>Similarly, we can extract rating and summary text of the movie by inspecting them and writing the small commands in the console.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div[class=&#34;ratingValue&#34;] &gt; strong &gt; span&#39;</span>).<span style="color:#a6e22e">text</span>().<span style="color:#a6e22e">trim</span>()
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">Output</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;8.5&#34;</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div[class=&#34;plot_summary_wrapper&#34;] &gt; div[class=&#34;plot_summary &#34;] &gt; div[class=&#34;summary_text&#34;]&#39;</span>).<span style="color:#a6e22e">text</span>().<span style="color:#a6e22e">trim</span>()
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">Output</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.&#34;</span>
-</code></pre></div><p>It is good to provide as much information to the command (here, in the form classes or ids name) to improve specificity.</p>
-<p>Now, since we have gathered the information we required. Let us now move to the actual code part.</p>
-<h2 id="workflow">Workflow</h2>
-<p>request (async) &gt; load response to cheerio &gt; Data-extraction using cheerio &gt; Json2Csv</p>
-<p>Pretty simple!</p>
-<p>We will first make a request to the website which will return us the html code in response and from that response we will extract our data in the object form and convert it into CSV form.</p>
-<p>Let us first initialize our project with <code>npm init</code> command. Now make a file named scraper.js (name of your choice it doesn&rsquo;t matter)</p>
-<p>Let us first call our dependencies.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">const</span>  <span style="color:#a6e22e">rp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;request-promise&#34;</span>)
-<span style="color:#ae81ff">2</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cheerio</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;cheerio&#34;</span>)
-<span style="color:#ae81ff">3</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">json2csv</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;json2csv&#34;</span>).<span style="color:#a6e22e">Parser</span>
-<span style="color:#ae81ff">4</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;fs&#34;</span>);
-<span style="color:#ae81ff">5</span>
-<span style="color:#ae81ff">6</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">movie_URL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.imdb.com/title/tt7286456/?ref_=hm_fanfav_tt_3_pd_fp1&#34;</span>;
-<span style="color:#ae81ff">7</span>
-</code></pre></div><p>Note that semi-colon after the movie URL, it is placed to separate the variable with unnamed function in the next line. Else you will get a TypeError.</p>
-<p>Next, we will initialize an unnamed async function which will be called with the flow of the code and receive our response in the function.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#ae81ff">8</span> (<span style="color:#a6e22e">async</span>() =&gt; {
-<span style="color:#ae81ff">9</span>     <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> []
-<span style="color:#ae81ff">10</span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">rp</span>({
-<span style="color:#ae81ff">11</span>        <span style="color:#a6e22e">uri</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">movie_URL</span>,
-<span style="color:#ae81ff">12</span>        <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span>{
-<span style="color:#ae81ff">13</span>            <span style="color:#a6e22e">accept</span><span style="color:#f92672">:</span>
-<span style="color:#ae81ff">14</span>            <span style="color:#e6db74">&#34;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9&#34;</span>,
-<span style="color:#ae81ff">15</span>             <span style="color:#e6db74">&#34;accept-encoding&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;gzip, deflate, br&#34;</span>,
-<span style="color:#ae81ff">16</span>             <span style="color:#e6db74">&#34;accept-language&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;en-GB,en-US;q=0.9,en;q=0.8&#34;</span>
-<span style="color:#ae81ff">17</span>         },
-<span style="color:#ae81ff">18</span>         <span style="color:#a6e22e">gzip</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-<span style="color:#ae81ff">19</span>     })
-<span style="color:#ae81ff">20</span> })()
-</code></pre></div><p>That unnamed function is a little complicated to understand. For now, grab it like a callback function which has no name and is calling itself like <code>(async () =&gt; {})()</code>. Under this function, we had declared an empty array in which we will be pushing our data. Then a response which we will be receiving after a request made to the URL. Note that we have added headers and encoding that is gzip here. It can be Json also depending on the website can be changed. This was all done to ensure that our request looks like made from a browser. You can find headers in the header options of the dev tools.</p>
-<p><img src="https://www.techcodemonk.in/wp-content/uploads/2020/06/techcodemonk_blog3-1024x504.png" alt=""></p>
-<p>Notice that Accept encoding is of the type gzip and not utf-8 or json thus gzip is separately set to true.</p>
-<p>We will now load this response to cheerio and then extract all the data using the commands which we used above in the browser’s console and then we will push this data the array that declared above.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#ae81ff">20</span> <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">$</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">cheerio</span>.<span style="color:#a6e22e">load</span>(<span style="color:#a6e22e">response</span>)
-<span style="color:#ae81ff">21</span> <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">title</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div[class=&#34;title_wrapper&#34;] &gt; h1&#39;</span>).<span style="color:#a6e22e">text</span>().<span style="color:#a6e22e">trim</span>()
-<span style="color:#ae81ff">22</span> <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">rating</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div[class=&#34;ratingValue&#34;] &gt; strong &gt; span&#39;</span>).<span style="color:#a6e22e">text</span>().<span style="color:#a6e22e">trim</span>()
-<span style="color:#ae81ff">23</span> <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">summary</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div[class=&#34;plot_summary_wrapper&#34;] &gt; div[class=&#34;plot_summary &#34;] &gt; div[class=&#34;summary_text&#34;]&#39;</span>).<span style="color:#a6e22e">text</span>().<span style="color:#a6e22e">trim</span>()
-<span style="color:#ae81ff">24</span>
-<span style="color:#ae81ff">25</span> <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">push</span>({
-<span style="color:#ae81ff">26</span>    <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">title</span>,
-<span style="color:#ae81ff">27</span>    <span style="color:#a6e22e">rating</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">rating</span>,
-<span style="color:#ae81ff">28</span>     <span style="color:#a6e22e">summary</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">summary</span>
-<span style="color:#ae81ff">29</span> })
-<span style="color:#ae81ff">30</span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">data</span>)
-</code></pre></div><p>Let us now run our script</p>
-<pre><code>Output: [{ title: 'Joker (2019)',
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=generator content="Hugo 0.83.1 with theme Tranquilpeak 0.4.8-BETA"><meta name=author content="Prajjwal Nijhara"><meta name=keywords content="tech,Prajjwal Nijhara,pnijhara,The pnijhara Blog,The official blog of Prajjwal Nijhara"><meta name=description content="NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
+ In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs."><meta property="og:description" content="NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
+ In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs."><meta property="og:type" content="article"><meta property="og:title" content="Web Scraping with Nodejs | Building an IMDb Scraper"><meta name=twitter:title content="Web Scraping with Nodejs | Building an IMDb Scraper"><meta property="og:url" content="https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/"><meta property="twitter:url" content="https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/"><meta property="og:site_name" content="pnijhara's blog"><meta property="og:description" content="NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
+ In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs."><meta name=twitter:description content="NOTE : This post originally appeared on techcodemonk.in, and has been posted here with due permission
+ In continuation with the blog Web Scrapping with Python by Kamran which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs."><meta property="og:locale" content="en-us"><meta property="article:published_time" content="2020-06-29T21:53:16"><meta property="article:modified_time" content="2020-06-29T21:53:16"><meta property="article:section" content="Random discovery"><meta property="article:section" content="Web-scraping"><meta property="article:tag" content="Nodejs"><meta property="article:tag" content="techcodemonk"><meta property="article:tag" content="web-scraping"><meta property="article:tag" content="IMDb"><meta name=twitter:card content="summary"><meta name=twitter:site content="@NijharaPrajjwal"><meta name=twitter:creator content="@NijharaPrajjwal"><meta property="og:image" content="https://www.techcodemonk.in/wp-content/uploads/2020/01/christopher-gower-m_HRfLhgABo-unsplash-1170x610.jpg"><meta property="twitter:image" content="https://www.techcodemonk.in/wp-content/uploads/2020/01/christopher-gower-m_HRfLhgABo-unsplash-1170x610.jpg"><meta property="og:image" content="https://www.techcodemonk.in/wp-content/uploads/2020/01/christopher-gower-m_HRfLhgABo-unsplash-1170x610.jpg"><meta property="twitter:image" content="https://www.techcodemonk.in/wp-content/uploads/2020/01/christopher-gower-m_HRfLhgABo-unsplash-1170x610.jpg"><meta property="og:image" content="https://pnijhara.github.io/img/profile/pnijhara.jpg"><meta property="twitter:image" content="https://pnijhara.github.io/img/profile/pnijhara.jpg"><title>Web Scraping with Nodejs | Building an IMDb Scraper</title><link rel=icon href=img/favicon.png><link rel=canonical href=https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin=anonymous><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin=anonymous><link rel=stylesheet href=https://pnijhara.github.io/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-144251498-1','auto'),ga('send','pageview'))</script></head><body><div id=blog><header id=header data-behavior=5><i id=btn-open-sidebar class="fa fa-lg fa-bars"></i><div class=header-title><a class=header-title-link href=https://pnijhara.github.io/>pnijhara's blog</a></div><a class=header-right-picture href=https://pnijhara.github.io/about><img class=header-picture src=https://pnijhara.github.io/img/profile/pnijhara.jpg alt="Author's picture"></a></header><nav id=sidebar data-behavior=5><div class=sidebar-container><div class=sidebar-profile><a href=https://pnijhara.github.io/#about><img class=sidebar-profile-picture src=https://pnijhara.github.io/img/profile/pnijhara.jpg alt="Author's picture"></a><h4 class=sidebar-profile-name>Prajjwal Nijhara</h4><h5 class=sidebar-profile-bio>Open Source Enthusiast | Blogger | Speed Cuber | Hockey | Chess</h5></div><ul class=sidebar-buttons><li class=sidebar-button><a class=sidebar-button-link href=https://pnijhara.github.io/><i class="sidebar-button-icon fa fa-lg fa-home"></i>
+<span class=sidebar-button-desc>Home</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://pnijhara.github.io/about><i class="sidebar-button-icon fa fa-lg fa-user-circle"></i>
+<span class=sidebar-button-desc>About</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://pnijhara.github.io/tags><i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+<span class=sidebar-button-desc>Tags</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://pnijhara.github.io/archives><i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+<span class=sidebar-button-desc>Archives</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://pnijhara.github.io/categories><i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+<span class=sidebar-button-desc>Categories</span></a></li></ul><ul class=sidebar-buttons><li class=sidebar-button><a class=sidebar-button-link href=https://github.com/pnijhara target=_blank rel=noopener><i class="sidebar-button-icon fa fa-lg fa-github"></i>
+<span class=sidebar-button-desc>GitHub</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://www.linkedin.com/in/nijharaprajjwal/ target=_blank rel=noopener><i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+<span class=sidebar-button-desc>Linkedin</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://twitter.com/NijharaPrajjwal target=_blank rel=noopener><i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+<span class=sidebar-button-desc>Twitter</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=mailto:prajjwalnijhara@gmail.com target=_blank rel=noopener><i class="sidebar-button-icon fa fa-lg fa-envelope-open"></i>
+<span class=sidebar-button-desc>Email</span></a></li><li class=sidebar-button><a class=sidebar-button-link href=https://tinyletter.com/pnijhara target=_blank rel=noopener><i class="sidebar-button-icon fa fa-lg fa-rocket"></i>
+<span class=sidebar-button-desc>Newsletter</span></a></li></ul><ul class=sidebar-buttons><li class=sidebar-button><a class=sidebar-button-link href=https://pnijhara.github.io/index.xml><i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+<span class=sidebar-button-desc>RSS</span></a></li></ul></div></nav><div class="post-header-cover
+text-center" style=background-image:url(https://www.techcodemonk.in/wp-content/uploads/2020/01/christopher-gower-m_HRfLhgABo-unsplash-1170x610.jpg) data-behavior=5></div><div id=main data-behavior=5 class="hasCover
+hasCoverMetaOut"><article class=post itemscope itemtype=http://schema.org/BlogPosting><div class="post-header main-content-wrap text-center"><h1 class=post-title itemprop=headline>Web Scraping with Nodejs | Building an IMDb Scraper</h1><div class="postShorten-meta post-meta"><time itemprop=datePublished datetime=2020-06-29T21:53:16+05:30>June 29, 2020</time>
+<span>in</span>
+<a class=category-link href=https://pnijhara.github.io/categories/random-discovery>Random discovery</a>,
+<a class=category-link href=https://pnijhara.github.io/categories/web-scraping>Web-scraping</a></div></div><div class="post-content markdown" itemprop=articleBody><div class=main-content-wrap><blockquote><p>NOTE : This post originally appeared on <a href=https://techcodemonk.in>techcodemonk.in</a>, and has been posted here with due permission</p></blockquote><p>In continuation with the blog <a href=https://www.techcodemonk.in/2020/01/18/web-scraping-with-python-building-an-imdb-scraper/>Web Scrapping with Python</a> by <a href=https://www.techcodemonk.in/author/skahmed1420/>Kamran</a> which explained briefly about what web scraping is. The blog was focused on Python programming language. However, here in this article we will be expanding our scope and try to write exactly like the last blog but with Nodejs. We will be (again) building an IMDB Scraper but this time with Nodejs.</p><blockquote><p>CAUTION: Web scraping stands on the border of both legal and illegal actions as web scraping is the technique to extract data from a website (a data may be under a copyright). This blog thus is just for education purpose and we are not using the scraped data for any other purpose.</p></blockquote><h2 id=aim>Aim</h2><p>We will be building an IMDB web scraper that will loop through a list of IMDB movie links. From there we will be extracting data such as the title of the movie/show, rating and summary and save the extracted data in a CSV file.</p><h2 id=dependencies-required>Dependencies required</h2><p>As you know there are tons of tools available for a single task at npm but we will be using the most widely used tools that are maintained by an active community.</p><ul><li><a href=https://nodejs.org/>Nodejs</a> (not a package but a basic prerequisite)</li><li><a href=https://www.npmjs.com/package/cheerio>Cheerio</a> to make the code looks like jQuery (we can perform our task without cheerio also, however, we are more focused on making our code look clean and good)</li><li><a href=https://www.npmjs.com/package/request>Request</a> to make http calls that will help us fetch the contents of the website (Note: Request package as what npm says is depreciated from 11th of Feb, 2020)</li><li><a href=https://www.npmjs.com/package/request-promise>Request-promise</a> is a request based package which we will be using along with Request package. (You can also use request-promise-native or request-promise-any but keeping the stuff simple we will be using request-promise)</li><li><a href=https://www.npmjs.com/package/json2csv>Json2csv</a> to convert our JSON output data to a CSV file. Other packages such as jsonexport or object-to-csv can also be used.</li></ul><h2 id=extracting-data-using-dev-tools>Extracting data using dev tools</h2><p>We will first look for the IMDB and try to extract some useful information which we will be using to make our scraper.</p><p><img src=https://www.techcodemonk.in/wp-content/uploads/2020/06/techcodemonk_blog1-1024x506.png alt></p><p>Here in the above image, you can clearly see that the title of the movie wrapped under a <code>div</code> tag which has a class that is <code>class="title_wrapper"</code> which is followed by a child <code>h1</code> tag which has the title of the movie.</p><blockquote><p>NOTE: I am using Firefox browser but you can use any other browser such as Chrome. For inspecting elements and using Firefox dev tools you need to just right click on that element and choose inspect element option or just use ctrl + shift + c on your keyboard.</p></blockquote><p>Let us now use the above information to extract the title of the movie. We will be using browser&rsquo;s console for this and jQuery syntax.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;div[class=&#34;title_wrapper&#34;] &gt; h1&#39;</span>).<span style=color:#a6e22e>text</span>().<span style=color:#a6e22e>trim</span>()
+</code></pre></div><pre><code class=language-javacript data-lang=javacript>Output: &quot;Joker (2019)&quot;
+</code></pre><p><img src=https://www.techcodemonk.in/wp-content/uploads/2020/06/techcodemonk_blog2-1024x507.png alt></p><p>Let us understand the syntax. Here we are calling every <code>div</code> tag which has class as &ldquo;title_wrapper&rdquo; followed by a child <code>h1</code> tag. Later we are extracting <strong>trimmed text</strong> from it. Why trimmed? Because sometimes additional spaces can be there in the text which we do not want in our CSV file. Thus I highly recommend you to use <code>trim()</code>, however, the above command can also work without it as we are only focussed on the text.</p><p>Similarly, we can extract rating and summary text of the movie by inspecting them and writing the small commands in the console.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;div[class=&#34;ratingValue&#34;] &gt; strong &gt; span&#39;</span>).<span style=color:#a6e22e>text</span>().<span style=color:#a6e22e>trim</span>()
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#a6e22e>Output</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;8.5&#34;</span>
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;div[class=&#34;plot_summary_wrapper&#34;] &gt; div[class=&#34;plot_summary &#34;] &gt; div[class=&#34;summary_text&#34;]&#39;</span>).<span style=color:#a6e22e>text</span>().<span style=color:#a6e22e>trim</span>()
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#a6e22e>Output</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.&#34;</span>
+</code></pre></div><p>It is good to provide as much information to the command (here, in the form classes or ids name) to improve specificity.</p><p>Now, since we have gathered the information we required. Let us now move to the actual code part.</p><h2 id=workflow>Workflow</h2><p>request (async) > load response to cheerio > Data-extraction using cheerio > Json2Csv</p><p>Pretty simple!</p><p>We will first make a request to the website which will return us the html code in response and from that response we will extract our data in the object form and convert it into CSV form.</p><p>Let us first initialize our project with <code>npm init</code> command. Now make a file named scraper.js (name of your choice it doesn&rsquo;t matter)</p><p>Let us first call our dependencies.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#ae81ff>1</span> <span style=color:#66d9ef>const</span>  <span style=color:#a6e22e>rp</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#34;request-promise&#34;</span>)
+<span style=color:#ae81ff>2</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>cheerio</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#34;cheerio&#34;</span>)
+<span style=color:#ae81ff>3</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>json2csv</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#34;json2csv&#34;</span>).<span style=color:#a6e22e>Parser</span>
+<span style=color:#ae81ff>4</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>fs</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#34;fs&#34;</span>);
+<span style=color:#ae81ff>5</span>
+<span style=color:#ae81ff>6</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>movie_URL</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://www.imdb.com/title/tt7286456/?ref_=hm_fanfav_tt_3_pd_fp1&#34;</span>;
+<span style=color:#ae81ff>7</span>
+</code></pre></div><p>Note that semi-colon after the movie URL, it is placed to separate the variable with unnamed function in the next line. Else you will get a TypeError.</p><p>Next, we will initialize an unnamed async function which will be called with the flow of the code and receive our response in the function.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#ae81ff>8</span> (<span style=color:#66d9ef>async</span>() =&gt; {
+<span style=color:#ae81ff>9</span>     <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>data</span> <span style=color:#f92672>=</span> []
+<span style=color:#ae81ff>10</span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>response</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>rp</span>({
+<span style=color:#ae81ff>11</span>        <span style=color:#a6e22e>uri</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>movie_URL</span>,
+<span style=color:#ae81ff>12</span>        <span style=color:#a6e22e>headers</span><span style=color:#f92672>:</span>{
+<span style=color:#ae81ff>13</span>            <span style=color:#a6e22e>accept</span><span style=color:#f92672>:</span>
+<span style=color:#ae81ff>14</span>            <span style=color:#e6db74>&#34;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9&#34;</span>,
+<span style=color:#ae81ff>15</span>             <span style=color:#e6db74>&#34;accept-encoding&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;gzip, deflate, br&#34;</span>,
+<span style=color:#ae81ff>16</span>             <span style=color:#e6db74>&#34;accept-language&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;en-GB,en-US;q=0.9,en;q=0.8&#34;</span>
+<span style=color:#ae81ff>17</span>         },
+<span style=color:#ae81ff>18</span>         <span style=color:#a6e22e>gzip</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span>,
+<span style=color:#ae81ff>19</span>     })
+<span style=color:#ae81ff>20</span> })()
+</code></pre></div><p>That unnamed function is a little complicated to understand. For now, grab it like a callback function which has no name and is calling itself like <code>(async () => {})()</code>. Under this function, we had declared an empty array in which we will be pushing our data. Then a response which we will be receiving after a request made to the URL. Note that we have added headers and encoding that is gzip here. It can be Json also depending on the website can be changed. This was all done to ensure that our request looks like made from a browser. You can find headers in the header options of the dev tools.</p><p><img src=https://www.techcodemonk.in/wp-content/uploads/2020/06/techcodemonk_blog3-1024x504.png alt></p><p>Notice that Accept encoding is of the type gzip and not utf-8 or json thus gzip is separately set to true.</p><p>We will now load this response to cheerio and then extract all the data using the commands which we used above in the browser’s console and then we will push this data the array that declared above.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#ae81ff>20</span> <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>$</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>cheerio</span>.<span style=color:#a6e22e>load</span>(<span style=color:#a6e22e>response</span>)
+<span style=color:#ae81ff>21</span> <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>title</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;div[class=&#34;title_wrapper&#34;] &gt; h1&#39;</span>).<span style=color:#a6e22e>text</span>().<span style=color:#a6e22e>trim</span>()
+<span style=color:#ae81ff>22</span> <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>rating</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;div[class=&#34;ratingValue&#34;] &gt; strong &gt; span&#39;</span>).<span style=color:#a6e22e>text</span>().<span style=color:#a6e22e>trim</span>()
+<span style=color:#ae81ff>23</span> <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>summary</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;div[class=&#34;plot_summary_wrapper&#34;] &gt; div[class=&#34;plot_summary &#34;] &gt; div[class=&#34;summary_text&#34;]&#39;</span>).<span style=color:#a6e22e>text</span>().<span style=color:#a6e22e>trim</span>()
+<span style=color:#ae81ff>24</span>
+<span style=color:#ae81ff>25</span> <span style=color:#a6e22e>data</span>.<span style=color:#a6e22e>push</span>({
+<span style=color:#ae81ff>26</span>    <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>title</span>,
+<span style=color:#ae81ff>27</span>    <span style=color:#a6e22e>rating</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>rating</span>,
+<span style=color:#ae81ff>28</span>     <span style=color:#a6e22e>summary</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>summary</span>
+<span style=color:#ae81ff>29</span> })
+<span style=color:#ae81ff>30</span> <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>data</span>)
+</code></pre></div><p>Let us now run our script</p><pre><code>Output: [{ title: 'Joker (2019)',
         rating: '8.5',
         summary:
         'In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.'
         }]
-</code></pre><p>Let us now perform our last task that is to convert this data into a CSV file. the code for this is actually very simple.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#ae81ff">32</span>
-<span style="color:#ae81ff">33</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">j2cp</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">json2csv</span>()
-<span style="color:#ae81ff">34</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">csv</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">j2cp</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">data</span>) 
-<span style="color:#ae81ff">36</span>    
-<span style="color:#ae81ff">35</span> <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">writeFileSync</span>(<span style="color:#e6db74">&#34;./movie.csv&#34;</span>, <span style="color:#a6e22e">csv</span>, <span style="color:#e6db74">&#34;utf8&#34;</span>)
-</code></pre></div><p>And we are done! Run this script and it will generate a movie.csv file after completion. You can use as much input URL data and loop through this function to generate more entries.</p>
-<p>The final code will somewhat look like:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">const</span>  <span style="color:#a6e22e">rp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;request-promise&#34;</span>)
-<span style="color:#ae81ff">2</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cheerio</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;cheerio&#34;</span>)
-<span style="color:#ae81ff">3</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">json2csv</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;json2csv&#34;</span>).<span style="color:#a6e22e">Parser</span>
-<span style="color:#ae81ff">4</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fs</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;fs&#34;</span>);
-<span style="color:#ae81ff">5</span> 
-<span style="color:#ae81ff">6</span> <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">movie_URL</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://www.imdb.com/title/tt7286456/?ref_=hm_fanfav_tt_3_pd_fp1&#34;</span>;
-<span style="color:#ae81ff">7</span>
-<span style="color:#ae81ff">8</span> (<span style="color:#a6e22e">async</span>() =&gt; {
-<span style="color:#ae81ff">9</span>     <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> []
-<span style="color:#ae81ff">10</span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">await</span> <span style="color:#a6e22e">rp</span>({
-<span style="color:#ae81ff">11</span>        <span style="color:#a6e22e">uri</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">movie_URL</span>,
-<span style="color:#ae81ff">12</span>        <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span>{
-<span style="color:#ae81ff">13</span>            <span style="color:#a6e22e">accept</span><span style="color:#f92672">:</span>
-<span style="color:#ae81ff">14</span>            <span style="color:#e6db74">&#34;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9&#34;</span>,
-<span style="color:#ae81ff">15</span>            <span style="color:#e6db74">&#34;accept-encoding&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;gzip, deflate, br&#34;</span>,
-<span style="color:#ae81ff">16</span>            <span style="color:#e6db74">&#34;accept-language&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;en-GB,en-US;q=0.9,en;q=0.8&#34;</span>
-<span style="color:#ae81ff">17</span>        },
-<span style="color:#ae81ff">18</span>        <span style="color:#a6e22e">gzip</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
-<span style="color:#ae81ff">19</span>    })
-<span style="color:#ae81ff">20</span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">$</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">cheerio</span>.<span style="color:#a6e22e">load</span>(<span style="color:#a6e22e">response</span>)
-<span style="color:#ae81ff">21</span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">title</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div[class=&#34;title_wrapper&#34;] &gt; h1&#39;</span>).<span style="color:#a6e22e">text</span>().<span style="color:#a6e22e">trim</span>()
-<span style="color:#ae81ff">22</span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">rating</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div[class=&#34;ratingValue&#34;] &gt; strong &gt; span&#39;</span>).<span style="color:#a6e22e">text</span>().<span style="color:#a6e22e">trim</span>()
-<span style="color:#ae81ff">23</span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">summary</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div[class=&#34;plot_summary_wrapper&#34;] &gt; div[class=&#34;plot_summary &#34;] &gt; div[class=&#34;summary_text&#34;]&#39;</span>).<span style="color:#a6e22e">text</span>().<span style="color:#a6e22e">trim</span>()
-<span style="color:#ae81ff">24</span>
-<span style="color:#ae81ff">25</span>    <span style="color:#a6e22e">data</span>.<span style="color:#a6e22e">push</span>({
-<span style="color:#ae81ff">26</span>        <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">title</span>,
-<span style="color:#ae81ff">27</span>        <span style="color:#a6e22e">rating</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">rating</span>,
-<span style="color:#ae81ff">28</span>        <span style="color:#a6e22e">summary</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">summary</span>
-<span style="color:#ae81ff">29</span>    })
-<span style="color:#ae81ff">30</span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">data</span>)
-<span style="color:#ae81ff">31</span>
-<span style="color:#ae81ff">32</span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">j2cp</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">json2csv</span>()
-<span style="color:#ae81ff">33</span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">csv</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">j2cp</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">data</span>)
-<span style="color:#ae81ff">34</span>    
-<span style="color:#ae81ff">35</span>    <span style="color:#a6e22e">fs</span>.<span style="color:#a6e22e">writeFileSync</span>(<span style="color:#e6db74">&#34;./movie.csv&#34;</span>, <span style="color:#a6e22e">csv</span>, <span style="color:#e6db74">&#34;utf8&#34;</span>)
-<span style="color:#ae81ff">36</span> })()
-</code></pre></div><p>Pretty simple! Isn&rsquo;t it?</p>
-<blockquote>
-<p>NOTE: the above article may seems to be like a copied one but it actually isn&rsquo;t as many bloggers or developers use these famous packages and use the same best practices hence such simple code snippets may looks like the same for multiple people.</p>
-</blockquote>
-<p>You can find the above code in my GitHub repository <a href="https://github.com/pnijhara/node-scraper/">here</a></p>
-
-              
-            </div>
-          </div>
-          <div id="post-footer" class="post-footer main-content-wrap">
-            
-              
-                
-                
-                  <div class="post-footer-tags">
-                    <span class="text-color-light text-small">TAGGED IN</span><br/>
-                    
-  <a class="tag tag--primary tag--small" href="https://pnijhara.github.io/tags/nodejs/">Nodejs</a>
-
-  <a class="tag tag--primary tag--small" href="https://pnijhara.github.io/tags/techcodemonk/">techcodemonk</a>
-
-  <a class="tag tag--primary tag--small" href="https://pnijhara.github.io/tags/web-scraping/">web-scraping</a>
-
-  <a class="tag tag--primary tag--small" href="https://pnijhara.github.io/tags/imdb/">IMDb</a>
-
-                  </div>
-                
-              
-            
-            <div class="post-actions-wrap">
-  
-      <nav >
-        <ul class="post-actions post-action-nav">
-          
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://pnijhara.github.io/2020/08/announcement-python-backend-blog-series-with-fastapi/" data-tooltip="Announcement: Python Backend blog series with FastAPI">
-              
-                  <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
-                </a>
-            </li>
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://pnijhara.github.io/2020/06/unpopular-opinion-linkedin-is-not-facebook/" data-tooltip="Unpopular Opinion: LinkedIn is not Facebook!">
-              
-                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
-                  <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-          
-        </ul>
-      </nav>
-    <ul class="post-actions post-action-share" >
-      
-        <li class="post-action hide-lg hide-md hide-sm">
-          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
-            <i class="fa fa-share-alt"></i>
-          </a>
-        </li>
-        
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/">
-              <i class="fa fa-facebook-official"></i>
-            </a>
-          </li>
-        
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-        
-      
-      
-        <li class="post-action">
-          <a class="post-action-btn btn btn--default" href="#disqus_thread">
-            <i class="fa fa-comment-o"></i>
-          </a>
-        </li>
-      
-      <li class="post-action">
-        
-          <a class="post-action-btn btn btn--default" href="#">
-        
-          <i class="fa fa-list"></i>
-        </a>
-      </li>
-    </ul>
-  
-</div>
-
-            
-              
-                <div id="disqus_thread">
-  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-              
-            
-          </div>
-        </article>
-        <footer id="footer" class="main-content-wrap">
-  <span class="copyrights">
-    &copy; 2021 <a href="https://github.com/pnijhara">pnijhara</a>. All Rights Reserved
-  </span>
-</footer>
-
-      </div>
-      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
-        <div class="post-actions-wrap">
-  
-      <nav >
-        <ul class="post-actions post-action-nav">
-          
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://pnijhara.github.io/2020/08/announcement-python-backend-blog-series-with-fastapi/" data-tooltip="Announcement: Python Backend blog series with FastAPI">
-              
-                  <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
-                </a>
-            </li>
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://pnijhara.github.io/2020/06/unpopular-opinion-linkedin-is-not-facebook/" data-tooltip="Unpopular Opinion: LinkedIn is not Facebook!">
-              
-                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
-                  <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-          
-        </ul>
-      </nav>
-    <ul class="post-actions post-action-share" >
-      
-        <li class="post-action hide-lg hide-md hide-sm">
-          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
-            <i class="fa fa-share-alt"></i>
-          </a>
-        </li>
-        
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/">
-              <i class="fa fa-facebook-official"></i>
-            </a>
-          </li>
-        
-          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
-        
-      
-      
-        <li class="post-action">
-          <a class="post-action-btn btn btn--default" href="#disqus_thread">
-            <i class="fa fa-comment-o"></i>
-          </a>
-        </li>
-      
-      <li class="post-action">
-        
-          <a class="post-action-btn btn btn--default" href="#">
-        
-          <i class="fa fa-list"></i>
-        </a>
-      </li>
-    </ul>
-  
-</div>
-
-      </div>
-      <div id="share-options-bar" class="share-options-bar" data-behavior="5">
-  <i id="btn-close-shareoptions" class="fa fa-close"></i>
-  <ul class="share-options">
-    
-      <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpnijhara.github.io%2F2020%2F06%2Fweb-scraping-with-nodejs-building-an-imdb-scraper%2F">
-          <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
-        </a>
-      </li>
-    
-      <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fpnijhara.github.io%2F2020%2F06%2Fweb-scraping-with-nodejs-building-an-imdb-scraper%2F">
-          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
-        </a>
-      </li>
-    
-  </ul>
-</div>
-<div id="share-options-mask" class="share-options-mask"></div>
-    </div>
-    
-    <div id="about">
-  <div id="about-card">
-    <div id="about-btn-close">
-      <i class="fa fa-remove"></i>
-    </div>
-    
-      <img id="about-card-picture" src="https://pnijhara.github.io/img/profile/pnijhara.jpg" alt="Author&#39;s picture" />
-    
-    <h4 id="about-card-name">Prajjwal Nijhara</h4>
-    
-      <div id="about-card-bio">Open Source Enthusiast | Blogger | Speed Cuber | Hockey | Chess</div>
-    
-    
-      <div id="about-card-job">
-        <i class="fa fa-briefcase"></i>
-        <br/>
-        Student @AMU
-      </div>
-    
-    
-      <div id="about-card-location">
-        <i class="fa fa-map-marker"></i>
-        <br/>
-        India
-      </div>
-    
-  </div>
-</div>
-
-    
-
-    
-  
-    
-      <div id="cover" style="background-image:url('https://pnijhara.github.io/img/cover/cover-post.jpg');"></div>
-    
-  
-
-
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
-
-
-<script src="https://pnijhara.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
-
-
-<script lang="javascript">
-window.onload = updateMinWidth;
-window.onresize = updateMinWidth;
-document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
-function updateMinWidth() {
-  var sidebar = document.getElementById("sidebar");
-  var main = document.getElementById("main");
-  main.style.minWidth = "";
-  var w1 = getComputedStyle(main).getPropertyValue("min-width");
-  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
-  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
-  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
-}
-</script>
-
-<script>
-$(document).ready(function() {
-  hljs.configure({ classPrefix: '', useBR: false });
-  $('pre.code-highlight > code, pre > code').each(function(i, block) {
-    if (!$(this).hasClass('codeblock')) {
-      $(this).addClass('codeblock');
-    }
-    hljs.highlightBlock(block);
-  });
-});
-</script>
-
-
-  
-    
-      <script>
-        var disqus_config = function () {
-          this.page.url = 'https:\/\/pnijhara.github.io\/2020\/06\/web-scraping-with-nodejs-building-an-imdb-scraper\/';
-          
-            this.page.identifier = '\/2020\/06\/web-scraping-with-nodejs-building-an-imdb-scraper\/'
-          
-        };
-        (function() {
-          
-          
-          if (window.location.hostname == "localhost") {
-            return;
-          }
-          var d = document, s = d.createElement('script');
-          var disqus_shortname = 'pnijhara-github-io';
-          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      </script>
-    
-  
-
-
-
-
-    
-  </body>
-</html>
-
+</code></pre><p>Let us now perform our last task that is to convert this data into a CSV file. the code for this is actually very simple.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#ae81ff>32</span>
+<span style=color:#ae81ff>33</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>j2cp</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>json2csv</span>()
+<span style=color:#ae81ff>34</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>csv</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>j2cp</span>.<span style=color:#a6e22e>parse</span>(<span style=color:#a6e22e>data</span>) 
+<span style=color:#ae81ff>36</span>    
+<span style=color:#ae81ff>35</span> <span style=color:#a6e22e>fs</span>.<span style=color:#a6e22e>writeFileSync</span>(<span style=color:#e6db74>&#34;./movie.csv&#34;</span>, <span style=color:#a6e22e>csv</span>, <span style=color:#e6db74>&#34;utf8&#34;</span>)
+</code></pre></div><p>And we are done! Run this script and it will generate a movie.csv file after completion. You can use as much input URL data and loop through this function to generate more entries.</p><p>The final code will somewhat look like:</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#ae81ff>1</span> <span style=color:#66d9ef>const</span>  <span style=color:#a6e22e>rp</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#34;request-promise&#34;</span>)
+<span style=color:#ae81ff>2</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>cheerio</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#34;cheerio&#34;</span>)
+<span style=color:#ae81ff>3</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>json2csv</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#34;json2csv&#34;</span>).<span style=color:#a6e22e>Parser</span>
+<span style=color:#ae81ff>4</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>fs</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#34;fs&#34;</span>);
+<span style=color:#ae81ff>5</span> 
+<span style=color:#ae81ff>6</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>movie_URL</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;https://www.imdb.com/title/tt7286456/?ref_=hm_fanfav_tt_3_pd_fp1&#34;</span>;
+<span style=color:#ae81ff>7</span>
+<span style=color:#ae81ff>8</span> (<span style=color:#66d9ef>async</span>() =&gt; {
+<span style=color:#ae81ff>9</span>     <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>data</span> <span style=color:#f92672>=</span> []
+<span style=color:#ae81ff>10</span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>response</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>rp</span>({
+<span style=color:#ae81ff>11</span>        <span style=color:#a6e22e>uri</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>movie_URL</span>,
+<span style=color:#ae81ff>12</span>        <span style=color:#a6e22e>headers</span><span style=color:#f92672>:</span>{
+<span style=color:#ae81ff>13</span>            <span style=color:#a6e22e>accept</span><span style=color:#f92672>:</span>
+<span style=color:#ae81ff>14</span>            <span style=color:#e6db74>&#34;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9&#34;</span>,
+<span style=color:#ae81ff>15</span>            <span style=color:#e6db74>&#34;accept-encoding&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;gzip, deflate, br&#34;</span>,
+<span style=color:#ae81ff>16</span>            <span style=color:#e6db74>&#34;accept-language&#34;</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;en-GB,en-US;q=0.9,en;q=0.8&#34;</span>
+<span style=color:#ae81ff>17</span>        },
+<span style=color:#ae81ff>18</span>        <span style=color:#a6e22e>gzip</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span>,
+<span style=color:#ae81ff>19</span>    })
+<span style=color:#ae81ff>20</span>    <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>$</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>cheerio</span>.<span style=color:#a6e22e>load</span>(<span style=color:#a6e22e>response</span>)
+<span style=color:#ae81ff>21</span>    <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>title</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;div[class=&#34;title_wrapper&#34;] &gt; h1&#39;</span>).<span style=color:#a6e22e>text</span>().<span style=color:#a6e22e>trim</span>()
+<span style=color:#ae81ff>22</span>    <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>rating</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;div[class=&#34;ratingValue&#34;] &gt; strong &gt; span&#39;</span>).<span style=color:#a6e22e>text</span>().<span style=color:#a6e22e>trim</span>()
+<span style=color:#ae81ff>23</span>    <span style=color:#66d9ef>let</span> <span style=color:#a6e22e>summary</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>$</span>(<span style=color:#e6db74>&#39;div[class=&#34;plot_summary_wrapper&#34;] &gt; div[class=&#34;plot_summary &#34;] &gt; div[class=&#34;summary_text&#34;]&#39;</span>).<span style=color:#a6e22e>text</span>().<span style=color:#a6e22e>trim</span>()
+<span style=color:#ae81ff>24</span>
+<span style=color:#ae81ff>25</span>    <span style=color:#a6e22e>data</span>.<span style=color:#a6e22e>push</span>({
+<span style=color:#ae81ff>26</span>        <span style=color:#a6e22e>title</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>title</span>,
+<span style=color:#ae81ff>27</span>        <span style=color:#a6e22e>rating</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>rating</span>,
+<span style=color:#ae81ff>28</span>        <span style=color:#a6e22e>summary</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>summary</span>
+<span style=color:#ae81ff>29</span>    })
+<span style=color:#ae81ff>30</span>    <span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>data</span>)
+<span style=color:#ae81ff>31</span>
+<span style=color:#ae81ff>32</span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>j2cp</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>json2csv</span>()
+<span style=color:#ae81ff>33</span>    <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>csv</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>j2cp</span>.<span style=color:#a6e22e>parse</span>(<span style=color:#a6e22e>data</span>)
+<span style=color:#ae81ff>34</span>    
+<span style=color:#ae81ff>35</span>    <span style=color:#a6e22e>fs</span>.<span style=color:#a6e22e>writeFileSync</span>(<span style=color:#e6db74>&#34;./movie.csv&#34;</span>, <span style=color:#a6e22e>csv</span>, <span style=color:#e6db74>&#34;utf8&#34;</span>)
+<span style=color:#ae81ff>36</span> })()
+</code></pre></div><p>Pretty simple! Isn&rsquo;t it?</p><blockquote><p>NOTE: the above article may seems to be like a copied one but it actually isn&rsquo;t as many bloggers or developers use these famous packages and use the same best practices hence such simple code snippets may looks like the same for multiple people.</p></blockquote><p>You can find the above code in my GitHub repository <a href=https://github.com/pnijhara/node-scraper/>here</a></p></div></div><div id=post-footer class="post-footer main-content-wrap"><div class=post-footer-tags><span class="text-color-light text-small">TAGGED IN</span><br><a class="tag tag--primary tag--small" href=https://pnijhara.github.io/tags/nodejs/>Nodejs</a>
+<a class="tag tag--primary tag--small" href=https://pnijhara.github.io/tags/techcodemonk/>techcodemonk</a>
+<a class="tag tag--primary tag--small" href=https://pnijhara.github.io/tags/web-scraping/>web-scraping</a>
+<a class="tag tag--primary tag--small" href=https://pnijhara.github.io/tags/imdb/>IMDb</a></div><div class=post-actions-wrap><nav><ul class="post-actions post-action-nav"><li class=post-action><a class="post-action-btn btn btn--default tooltip--top" href=https://pnijhara.github.io/2020/08/announcement-python-backend-blog-series-with-fastapi/ data-tooltip="Announcement: Python Backend blog series with FastAPI"><i class="fa fa-angle-left"></i>
+<span class="hide-xs hide-sm text-small icon-ml">NEXT</span></a></li><li class=post-action><a class="post-action-btn btn btn--default tooltip--top" href=https://pnijhara.github.io/2020/06/unpopular-opinion-linkedin-is-not-facebook/ data-tooltip="Unpopular Opinion: LinkedIn is not Facebook!"><span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+<i class="fa fa-angle-right"></i></a></li></ul></nav><ul class="post-actions post-action-share"><li class="post-action hide-lg hide-md hide-sm"><a class="post-action-btn btn btn--default btn-open-shareoptions" href=#btn-open-shareoptions><i class="fa fa-share-alt"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://www.facebook.com/sharer/sharer.php?u=https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/"><i class="fa fa-facebook-official"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://twitter.com/intent/tweet?text=https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/"><i class="fa fa-twitter"></i></a></li><li class=post-action><a class="post-action-btn btn btn--default" href=#disqus_thread><i class="fa fa-comment-o"></i></a></li><li class=post-action><a class="post-action-btn btn btn--default" href=#><i class="fa fa-list"></i></a></li></ul></div><div id=disqus_thread><noscript>Please enable JavaScript to view the <a href=//disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div></div></article><footer id=footer class=main-content-wrap><span class=copyrights>&copy; 2021 <a href=https://github.com/pnijhara>pnijhara</a>. All Rights Reserved</span></footer></div><div id=bottom-bar class=post-bottom-bar data-behavior=5><div class=post-actions-wrap><nav><ul class="post-actions post-action-nav"><li class=post-action><a class="post-action-btn btn btn--default tooltip--top" href=https://pnijhara.github.io/2020/08/announcement-python-backend-blog-series-with-fastapi/ data-tooltip="Announcement: Python Backend blog series with FastAPI"><i class="fa fa-angle-left"></i>
+<span class="hide-xs hide-sm text-small icon-ml">NEXT</span></a></li><li class=post-action><a class="post-action-btn btn btn--default tooltip--top" href=https://pnijhara.github.io/2020/06/unpopular-opinion-linkedin-is-not-facebook/ data-tooltip="Unpopular Opinion: LinkedIn is not Facebook!"><span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+<i class="fa fa-angle-right"></i></a></li></ul></nav><ul class="post-actions post-action-share"><li class="post-action hide-lg hide-md hide-sm"><a class="post-action-btn btn btn--default btn-open-shareoptions" href=#btn-open-shareoptions><i class="fa fa-share-alt"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://www.facebook.com/sharer/sharer.php?u=https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/"><i class="fa fa-facebook-official"></i></a></li><li class="post-action hide-xs"><a class="post-action-btn btn btn--default" target=new href="https://twitter.com/intent/tweet?text=https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/"><i class="fa fa-twitter"></i></a></li><li class=post-action><a class="post-action-btn btn btn--default" href=#disqus_thread><i class="fa fa-comment-o"></i></a></li><li class=post-action><a class="post-action-btn btn btn--default" href=#><i class="fa fa-list"></i></a></li></ul></div></div><div id=share-options-bar class=share-options-bar data-behavior=5><i id=btn-close-shareoptions class="fa fa-close"></i><ul class=share-options><li class=share-option><a class=share-option-btn target=new href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpnijhara.github.io%2F2020%2F06%2Fweb-scraping-with-nodejs-building-an-imdb-scraper%2F"><i class="fa fa-facebook-official"></i><span>Share on Facebook</span></a></li><li class=share-option><a class=share-option-btn target=new href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fpnijhara.github.io%2F2020%2F06%2Fweb-scraping-with-nodejs-building-an-imdb-scraper%2F"><i class="fa fa-twitter"></i><span>Share on Twitter</span></a></li></ul></div><div id=share-options-mask class=share-options-mask></div></div><div id=about><div id=about-card><div id=about-btn-close><i class="fa fa-remove"></i></div><img id=about-card-picture src=https://pnijhara.github.io/img/profile/pnijhara.jpg alt="Author's picture"><h4 id=about-card-name>Prajjwal Nijhara</h4><div id=about-card-bio>Open Source Enthusiast | Blogger | Speed Cuber | Hockey | Chess</div><div id=about-card-job><i class="fa fa-briefcase"></i><br>Student @AMU</div><div id=about-card-location><i class="fa fa-map-marker"></i><br>India</div></div></div><div id=cover style=background-image:url(https://pnijhara.github.io/img/cover/cover-post.jpg)></div><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin=anonymous></script><script src=https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin=anonymous></script><script src=https://pnijhara.github.io/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js></script><script lang=javascript>window.onload=updateMinWidth,window.onresize=updateMinWidth,document.getElementById("sidebar").addEventListener("transitionend",updateMinWidth);function updateMinWidth(){var b=document.getElementById("sidebar"),a=document.getElementById("main"),c,d,e;a.style.minWidth="",c=getComputedStyle(a).getPropertyValue("min-width"),d=getComputedStyle(b).getPropertyValue("width"),e=getComputedStyle(b).getPropertyValue("left"),a.style.minWidth=`calc(${c} - ${d} - ${e})`}</script><script>$(document).ready(function(){hljs.configure({classPrefix:'',useBR:!1}),$('pre.code-highlight > code, pre > code').each(function(b,a){$(this).hasClass('codeblock')||$(this).addClass('codeblock'),hljs.highlightBlock(a)})})</script><script>var disqus_config=function(){this.page.url='https://pnijhara.github.io/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/',this.page.identifier='/2020/06/web-scraping-with-nodejs-building-an-imdb-scraper/'};(function(){var a,b,c;if(window.location.hostname=="localhost")return;a=document,b=a.createElement('script'),c='pnijhara-github-io',b.src='//'+c+'.disqus.com/embed.js',b.setAttribute('data-timestamp',+new Date),(a.head||a.body).appendChild(b)})()</script></body></html>

@@ -1,50 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>SIH on pnijhara&#39;s blog</title>
-    <link>https://pnijhara.github.io/tags/sih/</link>
-    <description>Recent content in SIH on pnijhara&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jan 2020 02:50:26 +0530</lastBuildDate>
-    
-	<atom:link href="https://pnijhara.github.io/tags/sih/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Journey to SIH-19</title>
-      <link>https://pnijhara.github.io/2020/01/journey-to-sih-19/</link>
-      <pubDate>Sat, 04 Jan 2020 02:50:26 +0530</pubDate>
-      
-      <guid>https://pnijhara.github.io/2020/01/journey-to-sih-19/</guid>
-      <description>&lt;p&gt;This blog is all about the steps which I and my team &lt;strong&gt;Narcodes&lt;/strong&gt; took for getting selected in the SIH-19 software edition. Along with the steps we took, this blog also covers the points/steps which were mandatory for each team. Hence, the following blog aims for making the journey for SIH-2020 a bit easy for the new teams.&lt;/p&gt;
-&lt;p&gt;Well, the journey for SIH-19 started with the formation of a team. The team consisted of 6 members from the same college. However, each team was asked to have a female member and a leader. Next, we encoutered our first task to select a problem statement to work on and choose the right problem from tons of problems which was quite a difficult task!&lt;/p&gt;
-&lt;p&gt;Then came the team registration step and we got our team registered. The team registration step was also not a simple task. The team was registered by the team leader on the SIH-19 website. Moreover, the team&amp;rsquo;s registration got the green signal only when the SPOC (Single Point of Contact) gave his approval to the team. Hence, it was the duty of the team to submit their team members&amp;rsquo; information forwarded by the Head of the college to the SPOC.&lt;/p&gt;
-&lt;p&gt;Last and the important step was to write the SOP for the problem statements which were approved by the SPOC(based on an internal hackathon, where each team was asked to give a pitch on there SOP) before submitting it to the  SIH-19&amp;rsquo;s SOP submission portal.&lt;/p&gt;
-&lt;p&gt;So, to summarize the whole process, let us break it into points&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Team formation&lt;/li&gt;
-&lt;li&gt;Choosing the right problem statements&lt;/li&gt;
-&lt;li&gt;Team Registration
-&lt;ol&gt;
-&lt;li&gt;Team registration by the team leader&lt;/li&gt;
-&lt;li&gt;Contact SPOC&lt;/li&gt;
-&lt;li&gt;Approval by SPOC&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Internal Hackathon
-&lt;ol&gt;
-&lt;li&gt;SOP&lt;/li&gt;
-&lt;li&gt;Pitch&lt;/li&gt;
-&lt;li&gt;Submission of SOP by the team leader&lt;/li&gt;
-&lt;li&gt;Approval by  SPOC&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;NOTE: I am not sure that whether these steps would be followed for SIH-2020 nor I am sure about the upcoming internal Hackthon procedure. They may get change this year. For more information please visit &lt;a href=&#34;https://www.sih.gov.in/about&#34;&gt;SIH-2020 website&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SIH on pnijhara's blog</title><link>https://pnijhara.github.io/tags/sih/</link><description>Recent content in SIH on pnijhara's blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 04 Jan 2020 02:50:26 +0530</lastBuildDate><atom:link href="https://pnijhara.github.io/tags/sih/index.xml" rel="self" type="application/rss+xml"/><item><title>Journey to SIH-19</title><link>https://pnijhara.github.io/2020/01/journey-to-sih-19/</link><pubDate>Sat, 04 Jan 2020 02:50:26 +0530</pubDate><guid>https://pnijhara.github.io/2020/01/journey-to-sih-19/</guid><description>&lt;p>This blog is all about the steps which I and my team &lt;strong>Narcodes&lt;/strong> took for getting selected in the SIH-19 software edition. Along with the steps we took, this blog also covers the points/steps which were mandatory for each team. Hence, the following blog aims for making the journey for SIH-2020 a bit easy for the new teams.&lt;/p>
+&lt;p>Well, the journey for SIH-19 started with the formation of a team. The team consisted of 6 members from the same college. However, each team was asked to have a female member and a leader. Next, we encoutered our first task to select a problem statement to work on and choose the right problem from tons of problems which was quite a difficult task!&lt;/p>
+&lt;p>Then came the team registration step and we got our team registered. The team registration step was also not a simple task. The team was registered by the team leader on the SIH-19 website. Moreover, the team&amp;rsquo;s registration got the green signal only when the SPOC (Single Point of Contact) gave his approval to the team. Hence, it was the duty of the team to submit their team members' information forwarded by the Head of the college to the SPOC.&lt;/p>
+&lt;p>Last and the important step was to write the SOP for the problem statements which were approved by the SPOC(based on an internal hackathon, where each team was asked to give a pitch on there SOP) before submitting it to the SIH-19&amp;rsquo;s SOP submission portal.&lt;/p>
+&lt;p>So, to summarize the whole process, let us break it into points&lt;/p>
+&lt;ol>
+&lt;li>Team formation&lt;/li>
+&lt;li>Choosing the right problem statements&lt;/li>
+&lt;li>Team Registration
+&lt;ol>
+&lt;li>Team registration by the team leader&lt;/li>
+&lt;li>Contact SPOC&lt;/li>
+&lt;li>Approval by SPOC&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;li>Internal Hackathon
+&lt;ol>
+&lt;li>SOP&lt;/li>
+&lt;li>Pitch&lt;/li>
+&lt;li>Submission of SOP by the team leader&lt;/li>
+&lt;li>Approval by SPOC&lt;/li>
+&lt;/ol>
+&lt;/li>
+&lt;/ol>
+&lt;blockquote>
+&lt;p>NOTE: I am not sure that whether these steps would be followed for SIH-2020 nor I am sure about the upcoming internal Hackthon procedure. They may get change this year. For more information please visit &lt;a href="https://www.sih.gov.in/about">SIH-2020 website&lt;/a>.&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
