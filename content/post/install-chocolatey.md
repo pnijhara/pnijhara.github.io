@@ -11,7 +11,7 @@ keywords:
 - tech
 autothumbnailImage: false
 ---
-In my first blog on Hugo, I have written a command on how to install Hugo on a Windows machine.
+In my first blog on Hugo [^footnote], I have written a command on how to install Hugo on a Windows machine.
 
 ``` shell
 > choco install hugo -confirm
@@ -43,3 +43,5 @@ It is similar to apt, yum, brew or Pacman or indeed any other package managers f
 
 And it's done. See `choco` in acton:
 ![gif](https://docs.chocolatey.org/assets/images/gifs/choco_install.gif)
+
+[^footnote]: Read "Create your own blog in 30 minutes using Hugo, a static site generator written in Go" &rarr; https://pnijhara.github.io/2019/08/create-your-own-blog-in-30-minutes-using-hugo-a-static-site-generator-written-in-go/
