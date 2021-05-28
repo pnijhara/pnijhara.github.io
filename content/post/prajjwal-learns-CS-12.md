@@ -26,4 +26,3 @@ What did I learn in the past week?
 Banker's algorithm was the most interesting topic in the whole deadlock chapter. I was able to solve the trickiest problems with the banker's algorithm. And, deadlock ignorance was the funniest topic that I read in the journey till now. I mean, after learning so much about the deadlocks, we came to the conclusion of ignoring deadlocks. Amazing!
 
 Anyways, I am targetting to complete Disk Scheduling by the end of the week. Wish me luck!!
-<!--more-->
