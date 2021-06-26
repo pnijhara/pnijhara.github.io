@@ -15,10 +15,13 @@ autoThumbnailImage : false
 
 So, here is my review of the book. 
 
-Note: Before starting, I wanted to be clear that no book in the world is perfect. There are some people for whom this book is very close. I am just stating what I liked in this book and what else the author could do to make this book better. This book may also be a spoiler for some people.
+> Note: Before starting, I wanted to be clear that no book in the world is perfect. There are some people for whom this book is very close. I am just stating what I liked in this book and what else the author could do to make this book better. This book may also be a spoiler for some people.
+
+<!--more-->
 
 ## About the author
 Zed A. Shaw is an experienced software developer known for his Ruby applications (most notably, the Mongrel webserver), tech articles, and educational projects (e.g. a series of Learn Code The Hard Way courses). However, he owes his popularity not only to his books and projects; Zed is also an outspoken critic of certain technologies and aspects of the programming culture. He has written some popular blogs/essays outlining the problems that Python3 3 have. According to him "There is a high probability that Python 3 is such a failure it will kill Python".
+
 
 ## Book's Structure
 According to the author, as written in the preface of this book, this book has some techniques that are beneficial for beginners who know nothing and need to acquire basic skills before they can understand the complex code structures.
@@ -36,7 +39,7 @@ And lastly, which I think very few books cover when it comes in terms of basic P
 ## Why Learn Python "the hard way"?
 The main objective of this book was to get anyone started in programming. The title says it is the hard way to learn to write code, but it is not. It is only the “hard” way because it uses a technique called instruction. Instruction is where I tell you to do a sequence of controlled exercises designed to build skill through repetition. This technique works very well with beginners who know nothing and need to acquire basic skills before they can understand more complex topics. It’s used in everything from martial arts to music to even basic math and reading skills.
 
-So basically, *The hard way is the learn it yourself approach*
+So basically, *The hard way is the "learn it yourself approach".*
 
 ## What I like in this book
 The best section that I found in this book is "Common Student Questions". Realizing that many readers would encounter various bugs, mistype, and make other mistakes, Zed includes a ”Common Student Questions” section in every chapter. As the name suggests, it explains how to solve the most typical problems that readers might encounter — this is, essentially, Stack Overflow baked directly into the book!
