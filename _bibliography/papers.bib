@@ -1,44 +1,96 @@
 ---
 ---
 
-@inproceedings{nijhara2025mis,
-  author    = {Prajjwal Nijhara and Aditya Trivedi and Dip Sankar Banerjee},
-  title     = {Fast Maximal Independent Sets on Dynamic Graphs},
-  booktitle = {33rd Euromicro/IEEE International Conference on Parallel, Distributed, and Network-Based Processing (PDP 2025)},
-  year      = {2025}
-}
+@INPROCEEDINGS {nijhara2025mis,
+abbr={PDP},
+bibtex_show={true},
+author = { Nijhara, Prajjwal and Trivedi, Aditya and Banerjee, Dip Sankar },
+booktitle = { 33rd Euromicro/IEEE International Conference on Parallel, Distributed, and Network-Based Processing (PDP 2025) },
+title = {{ Fast Maximal Independent Sets on Dynamic Graphs }},
+year = {2025},
+volume = {},
+ISSN = {},
+month =March}
 
-@inproceedings{nijhara2025katz,
-  author    = {Prajjwal Nijhara and Dishit Sharma and Dip Sankar Banerjee},
-  title     = {Fast Katz Centrality on Dynamic Graphs},
-  booktitle = {33rd Euromicro/IEEE International Conference on Parallel, Distributed, and Network-Based Processing (PDP 2025)},
-  year      = {2025}
-}
+@INPROCEEDINGS {nijhara2025mis,
+abbr={PDP},
+bibtex_show={true},
+author = { Nijhara, Prajjwal and Sharma, Dishit and Banerjee, Dip Sankar },
+booktitle = { 33rd Euromicro/IEEE International Conference on Parallel, Distributed, and Network-Based Processing (PDP 2025) },
+title = {{ Fast Katz Centrality on Dynamic Graphs }},
+year = {2025},
+volume = {},
+ISSN = {},
+month =March}
 
-@inproceedings{trivedi2024mis,
-  author    = {Aditya Trivedi and Prajjwal Nijhara and Dip Sankar Banerjee},
-  title     = {Fast MIS on Incremental Graphs},
-  booktitle = {31st IEEE International Conference on High Performance Computing, Data, and Analytics (HiPC 2024) - Student Research Symposium},
-  year      = {2024}
-}
+@INPROCEEDINGS {10898364,
+abbr={HiPCW},
+bibtex_show={true},
+author = { Trivedi, Aditya and Nijhara, Prajjwal and Banerjee, Dip Sankar },
+booktitle = { 2024 IEEE 31st International Conference on High Performance Computing, Data and Analytics Workshop (HiPCW) },
+title = {{ Fast MIS on Incremental Graphs }},
+year = {2024},
+volume = {},
+ISSN = {},
+pages = {139-140},
+abstract = { Maintaining the Maximal Independent Set (MIS) in dynamic graphs is crucial for applications like resource allocation, load balancing, and network optimization. Traditional approaches require complete re-computation, making them inefficient for large and evolving graphs. Our proposed methods utilize Tuple Valued Bitmap (TVB) and its extension with levels, TVBL, to enhance parallelism and minimize search space. Experimental evaluations on large-scale graphs, ranging from 50 million to 1.2 billion edges, demonstrate significant speedups—up to 15.64x for insertions, with minimal impact on the MIS cardinality. This approach offers a scalable solution for dynamic graphs, paving the way for further optimization in fully dynamic and streaming settings. },
+keywords = {High performance computing;Conferences;Parallel processing;Load management;Dynamic scheduling;Distance measurement;Resource management;Optimization},
+doi = {10.1109/HiPCW63042.2024.00047},
+url = {https://doi.ieeecomputersociety.org/10.1109/HiPCW63042.2024.00047},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month =Dec}
 
-@inproceedings{sharma2024katz,
-  author    = {Dishit Sharma and Prajjwal Nijhara and Dip Sankar Banerjee},
-  title     = {Parallel Katz Centrality on Evolving Graphs},
-  booktitle = {31st IEEE International Conference on High Performance Computing, Data, and Analytics (HiPC 2024)},
-  year      = {2024}
-}
+@INPROCEEDINGS {10898741,
+abbr={HiPCW},
+bibtex_show={true},
+author = { Sharma, Dishit and Nijhara, Prajjwal and Banerjee, Dip Sankar },
+booktitle = { 2024 IEEE 31st International Conference on High Performance Computing, Data and Analytics Workshop (HiPCW) },
+title = {{ Parallel Katz Centrality On Evolving Graphs }},
+year = {2024},
+volume = {},
+ISSN = {},
+pages = {193-194},
+abstract = { Katz centrality measures a node’s influence within a network, considering the total number of walks between pairs of nodes rather than solely the shortest paths. This paper presents an algorithm for dynamically updating Katz centrality scores as the underlying graph evolves. Our method employs a frontier-based breadth-first search (BFS) to efficiently derive updated Katz scores in dynamic graphs. Notably, our algorithm accommodates node insertions and deletions, addressing a significant limitation of current state-of-the-art methods. },
+keywords = {Heuristic algorithms;High performance computing;Conferences},
+doi = {10.1109/HiPCW63042.2024.00074},
+url = {https://doi.ieeecomputersociety.org/10.1109/HiPCW63042.2024.00074},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month =Dec}
 
-@inproceedings{mundhara2024simrank,
-  author    = {Aditya Mundhara and Prajjwal Nijhara and Dip Sankar Banerjee},
-  title     = {Efficient Parallel Algorithms for Exact SimRank Computations},
-  booktitle = {31st IEEE International Conference on High Performance Computing, Data, and Analytics (HiPC 2024) - Student Research Symposium},
-  year      = {2024}
-}
+@INPROCEEDINGS {10898914,
+abbr={HiPCW},
+bibtex_show={true},
+author = { Mundhara, Aditya and Nijhara, Prajjwal and Banerjee, Dip Sankar },
+booktitle = { 2024 IEEE 31st International Conference on High Performance Computing, Data and Analytics Workshop (HiPCW) },
+title = {{ Efficient Parallel Algorithms For Exact SimRank Computations }},
+year = {2024},
+volume = {},
+ISSN = {},
+pages = {125-126},
+abstract = { SimRank is a popular measure for evaluating node similarities in graphs, but its high computational cost limits scalability for large graphs. The ExactSim [1] algorithm achieves precise single-source SimRank similarities but suffers from significant computation time. In this work, we parallelize key components of ExactSim — Personalized PageRank (PPR) computations and SimRank calculations on a CPU-based shared memory multi-core system. By optimizing these modules, we significantly reduce runtime, making ExactSim more practical for large-scale applications. Our results (on graph sizes ranging from 0.1 million edges to 100 million edges) demonstrate the effectiveness of parallelization in improving both efficiency and scalability. },
+keywords = {Runtime;Scalability;High performance computing;Conferences;Distance measurement;Computational efficiency;Parallel algorithms},
+doi = {10.1109/HiPCW63042.2024.00040},
+url = {https://doi.ieeecomputersociety.org/10.1109/HiPCW63042.2024.00040},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month =Dec}
 
-@inproceedings{yajnik2024simrank,
-  author    = {Dhyan Yajnik and Huzefa Ansari and Prajjwal Nijhara and Dip Sankar Banerjee},
-  title     = {Efficient Parallel Algorithms for Exact SimRank Computations},
-  booktitle = {31st IEEE International Conference on High Performance Computing, Data, and Analytics (HiPC 2024) - Student Research Symposium},
-  year      = {2024}
-}
+@INPROCEEDINGS {10898270,
+abbr={HiPCW},
+bibtex_show={true},
+author = { Yajnik, Dhyan and Ansari, Huzefa Aiyub and Nijhara, Prajjwal and Banerjee, Dip Sankar },
+booktitle = { 2024 IEEE 31st International Conference on High Performance Computing, Data and Analytics Workshop (HiPCW) },
+title = {{ SimRank on Data Streams }},
+year = {2024},
+volume = {},
+ISSN = {},
+pages = {137-138},
+abstract = { This paper introduces a novel approach that integrates machine learning techniques to optimize SimRank convergence on streaming data. Our approach utilizes the structural properties of the graph, such as edge features, to train a linear regression model that predicts SimRank values for newly added nodes. These predictions serve as effective initializations, ensuring faster convergence of the SimRank algorithm. By avoiding full recomputation and providing a new direction for research, our method offers a promising solution for similarity computation in evolving networks. },
+keywords = {Machine learning algorithms;High performance computing;Conferences;Computational modeling;Linear regression;Machine learning;Predictive models;Prediction algorithms;Streams;Convergence},
+doi = {10.1109/HiPCW63042.2024.00046},
+url = {https://doi.ieeecomputersociety.org/10.1109/HiPCW63042.2024.00046},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month =Dec}
