@@ -23,7 +23,7 @@ social: true  # includes social icons at the bottom of the page
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Prajjwal%20Nijhara-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/nijharaprajjwal/)
 [![GitHub](https://img.shields.io/badge/GitHub-PNIJHARA-black?style=flat-square&logo=github)](https://github.com/pnijhara)
-[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-PRAJJWAL%20NIJHARA-4285F4?style=flat-square&logo=googlescholar&logoColor=blue)](https://scholar.google.com/citations?user=YOUR_ID_HERE)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-PRAJJWAL%20NIJHARA-4285F4?style=flat-square&logo=googlescholar&logoColor=blue)](https://scholar.google.com/citations?user=xErUarEAAAAJ&hl=en)
 [![DBLP](https://img.shields.io/badge/DBLP-PRAJJWAL%20NIJHARA-007EC6?style=flat-square&logo=dblp&logoColor=green)](https://dblp.org/pid/402/8615.html)
 
 Greetings everyone! 👋 I am Prajjwal Nijhara (PNIJHARA), **TCS Research Scholarship Program Fellow**, and currently pursuing a combined **M.Tech + Ph.D.** program in Computer Science at the prestigious **[Indian Institute of Technology, Jodhpur](https://iitj.ac.in/)**. I am dedicated to exploring the vast frontiers of computer science and contributing to its advancements through innovative research and development.
