@@ -9,8 +9,9 @@ profile:
   image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Systems Lab, Dept of CSE</p>
-    <p>Indian Institute of Technology, Jodhpur</p>
+    <p>Systems for Performance, Analysis and Data Engineeering (SPADE) Lab</p>
+    <p>Dept of CSE</p>
+    <p>Indian Institute of Technology Jodhpur</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
@@ -18,15 +19,16 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-## M.Tech + Ph.D. Student | Computer Science Enthusiast | Python Developer
+## M.Tech + Ph.D. Student | Computer + Electrical Engineering Enthusiast | Philosopher
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Prajjwal%20Nijhara-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/nijharaprajjwal/)
 [![GitHub](https://img.shields.io/badge/GitHub-PNIJHARA-black?style=flat-square&logo=github)](https://github.com/pnijhara)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-PRAJJWAL%20NIJHARA-4285F4?style=flat-square&logo=googlescholar&logoColor=blue)](https://scholar.google.com/citations?user=YOUR_ID_HERE)
+[![DBLP](https://img.shields.io/badge/DBLP-PRAJJWAL%20NIJHARA-007EC6?style=flat-square&logo=dblp&logoColor=green)](https://dblp.org/pid/402/8615.html)
 
+Greetings everyone! 👋 I am Prajjwal Nijhara (PNIJHARA), **TCS Research Scholarship Program Fellow**, and currently pursuing a combined **M.Tech + Ph.D.** program in Computer Science at the prestigious **[Indian Institute of Technology, Jodhpur](https://iitj.ac.in/)**. I am dedicated to exploring the vast frontiers of computer science and contributing to its advancements through innovative research and development.
 
-Greetings everyone! 👋 I am Prajjwal Nijhara (PNIJHARA), an enthusiastic learner and currently pursuing a combined **M.Tech + Ph.D.** program in Computer Science at the prestigious **[Indian Institute of Technology, Jodhpur](https://iitj.ac.in/)**. I am dedicated to exploring the vast frontiers of computer science and contributing to its advancements through innovative research and development.
-
-Apart from Computer Science, I am a listener and a reader and spend my not so much available free time listening to people's stories and reading psychology and poetry books. During my wonderful time at **[The Aligarh Muslim University](https://amu.ac.in/)**, I got introduced to Urdu poets and poetries and thus started writing some of my own.
+Apart from Computer Science, I am a listener and a reader and spend my not so much available free time listening to people's stories and reading psychology, philosophy and poetry books. During my wonderful time at **[The Aligarh Muslim University](https://amu.ac.in/)**, I got introduced to Urdu poets and poetries and thus started writing some of my own.
 Here is a small nugget of that.
 
 Cheers!!
@@ -47,6 +49,4 @@ The flags of identity and destiny, with us they'll always be.<br>
 <br>
 
 ~ Prajjwal Sahranpuriya<br>
-~ Pushkar<br>
 </blockquote>
-
