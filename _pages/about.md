@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpeg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Systems for Performance, Analysis and Data Engineeering (SPADE) Lab</p>
+    <p>Systems for Performance, Analysis and Data Engineering (SPADE) Lab</p>
     <p>Dept of CSE</p>
     <p>Indian Institute of Technology Jodhpur</p>
 
