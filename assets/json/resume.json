@@ -67,10 +67,22 @@
   ],
   "awards": [
     {
+      "title": "HiPC SRS Travel Grant",
+      "date": "2025-12-19",
+      "awarder": "HiPC",
+      "summary": "Student Research Symposium Travel Grant"
+    },
+    {
       "title": "TCS Research Scholarship Program Fellow",
-      "date": "2025-01-01",
+      "date": "2025-07-01",
       "awarder": "Tata Consultancy Services",
-      "summary": "Prestigious fellowship for doctoral research"
+      "summary": "Fellowship awarded for doctoral research"
+    },
+    {
+      "title": "HiPC SRS Travel Grant",
+      "date": "2024-12-19",
+      "awarder": "HiPC",
+      "summary": "Student Research Symposium Travel Grant"
     }
   ],
   "certificates": [],
@@ -85,7 +97,7 @@
     {
       "name": "Efficient Parallel Algorithms for Dynamic Percolation Centrality",
       "publisher": "ICPP 2025 - 54th International Conference on Parallel Processing",
-      "releaseDate": "2025-01-01",
+      "releaseDate": "2025-06-01",
       "url": "",
       "summary": "Prajjwal Nijhara, Lokesh Venkatachalam, Agam Harpreet Singh, Athreya Chandramouli, Sayantan Jana, Kishore Kothapalli, Dip Sankar Banerjee"
     },
