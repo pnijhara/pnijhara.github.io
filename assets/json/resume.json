@@ -88,6 +88,13 @@
   "certificates": [],
   "publications": [
     {
+      "name": "PJsim: Towards Precise and Scalable Graph Similarity",
+      "publisher": "SIGMOD 2026 - ACM International Conference on Management of Data",
+      "releaseDate": "2026-06-01",
+      "url": "",
+      "summary": "Prajjwal Nijhara, Jainan Tandel, Rohit Prajapati, Dip Sankar Banerjee"
+    },
+    {
       "name": "TC-MIS: Maximal Independent Sets on Tensor Cores",
       "publisher": "GPGPU@ASPLOS 2026 - 18th Workshop on General Purpose Processing Unit held in conjunction with ASPLOS",
       "releaseDate": "2026-03-01",
