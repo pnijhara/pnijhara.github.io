@@ -1,61 +1,76 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Prajjwal Nijhara",
+    "label": "PhD Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "d23cse005@iitj.ac.in",
+    "phone": "",
+    "url": "https://pnijhara.github.io",
+    "summary": "M.Tech + Ph.D. student at IIT Jodhpur, TCS Research Scholarship Program Fellow, researching parallel and distributed computing with focus on dynamic graph algorithms.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "Jodhpur",
+      "countryCode": "IN",
+      "region": "Rajasthan"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "pnijhara",
+        "url": "https://github.com/pnijhara"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "nijharaprajjwal",
+        "url": "https://www.linkedin.com/in/nijharaprajjwal/"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "xErUarEAAAAJ",
+        "url": "https://scholar.google.com/citations?user=xErUarEAAAAJ"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": [
-        "Relativity"
-      ]
+      "name": "Indian Institute of Technology Jodhpur",
+      "position": "Teaching Assistant",
+      "url": "https://iitj.ac.in",
+      "startDate": "2023-08-01",
+      "endDate": "",
+      "summary": "Teaching assistant for undergraduate and graduate courses in the Department of Computer Science and Engineering.",
+      "highlights": []
+    },
+    {
+      "name": "Spiti",
+      "position": "Software Engineer (Intern)",
+      "url": "",
+      "startDate": "2022-01-01",
+      "endDate": "2022-06-01",
+      "summary": "Software development internship in Bengaluru, India.",
+      "highlights": []
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "institution": "Indian Institute of Technology Jodhpur",
+      "url": "https://iitj.ac.in",
+      "area": "Computer Science and Engineering",
+      "studyType": "M.Tech + Ph.D.",
+      "startDate": "2023-01-01",
+      "endDate": "",
       "score": "",
-      "courses": [
-        "Theory of Relativity"
-      ]
+      "courses": []
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "TCS Research Scholarship Program Fellow",
+      "date": "2025-01-01",
+      "awarder": "Tata Consultancy Services",
+      "summary": "Prestigious fellowship for doctoral research"
     }
   ],
   "certificates": [],
@@ -63,15 +78,24 @@
   "skills": [],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker"
-    },
-    {
       "language": "English",
       "fluency": "Fluent"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Native speaker"
     }
   ],
-  "interests": [],
+  "interests": [
+    {
+      "name": "Parallel and Distributed Computing",
+      "keywords": ["Dynamic Graph Algorithms", "Centrality Measures"]
+    },
+    {
+      "name": "High Performance Computing",
+      "keywords": ["GPU Computing", "Scalable Algorithms"]
+    }
+  ],
   "references": [],
   "projects": []
 }
