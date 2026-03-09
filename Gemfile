@@ -1,4 +1,13 @@
 source 'https://rubygems.org'
+
+# Ruby 4.0 removed these from default gems
+gem 'base64'
+gem 'bigdecimal'
+gem 'csv'
+gem 'logger'
+gem 'mutex_m'
+gem 'ostruct'
+
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
@@ -8,7 +17,7 @@ group :jekyll_plugins do
     gem 'jekyll-feed'
     gem 'jekyll-get-json'
     gem 'jekyll-imagemagick'
-    gem 'jekyll-jupyter-notebook'
+    # gem 'jekyll-jupyter-notebook'  # Disabled for Ruby 4.0 compatibility
     gem 'jekyll-link-attributes'
     gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
