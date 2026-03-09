@@ -74,7 +74,64 @@
     }
   ],
   "certificates": [],
-  "publications": [],
+  "publications": [
+    {
+      "name": "A Precise and Closed-Form Solution for Edge-Ranking",
+      "publisher": "ICDCN 2026 - 27th International Conference on Distributed Computing and Networking",
+      "releaseDate": "2026-01-01",
+      "url": "",
+      "summary": "Prajjwal Nijhara, Jainan Tandel, Rohit Prajapati, Dip Sankar Banerjee"
+    },
+    {
+      "name": "Efficient Parallel Algorithms for Dynamic Percolation Centrality",
+      "publisher": "ICPP 2025 - 54th International Conference on Parallel Processing",
+      "releaseDate": "2025-01-01",
+      "url": "",
+      "summary": "Prajjwal Nijhara, Lokesh Venkatachalam, Agam Harpreet Singh, Athreya Chandramouli, Sayantan Jana, Kishore Kothapalli, Dip Sankar Banerjee"
+    },
+    {
+      "name": "Fast Maximal Independent Sets on Dynamic Graphs",
+      "publisher": "PDP 2025 - 33rd Euromicro/IEEE International Conference on Parallel, Distributed, and Network-Based Processing",
+      "releaseDate": "2025-03-01",
+      "url": "",
+      "summary": "Prajjwal Nijhara, Aditya Trivedi, Dip Sankar Banerjee"
+    },
+    {
+      "name": "Fast Katz Centrality on Dynamic Graphs",
+      "publisher": "PDP 2025 - 33rd Euromicro/IEEE International Conference on Parallel, Distributed, and Network-Based Processing",
+      "releaseDate": "2025-03-01",
+      "url": "",
+      "summary": "Prajjwal Nijhara, Dishit Sharma, Dip Sankar Banerjee"
+    },
+    {
+      "name": "Fast MIS on Incremental Graphs",
+      "publisher": "HiPCW 2024 - IEEE 31st International Conference on High Performance Computing, Data and Analytics Workshop",
+      "releaseDate": "2024-12-01",
+      "url": "https://doi.ieeecomputersociety.org/10.1109/HiPCW63042.2024.00047",
+      "summary": "Aditya Trivedi, Prajjwal Nijhara, Dip Sankar Banerjee"
+    },
+    {
+      "name": "Parallel Katz Centrality On Evolving Graphs",
+      "publisher": "HiPCW 2024 - IEEE 31st International Conference on High Performance Computing, Data and Analytics Workshop",
+      "releaseDate": "2024-12-01",
+      "url": "https://doi.ieeecomputersociety.org/10.1109/HiPCW63042.2024.00074",
+      "summary": "Dishit Sharma, Prajjwal Nijhara, Dip Sankar Banerjee"
+    },
+    {
+      "name": "Efficient Parallel Algorithms For Exact SimRank Computations",
+      "publisher": "HiPCW 2024 - IEEE 31st International Conference on High Performance Computing, Data and Analytics Workshop",
+      "releaseDate": "2024-12-01",
+      "url": "https://doi.ieeecomputersociety.org/10.1109/HiPCW63042.2024.00040",
+      "summary": "Aditya Mundhara, Prajjwal Nijhara, Dip Sankar Banerjee"
+    },
+    {
+      "name": "SimRank on Data Streams",
+      "publisher": "HiPCW 2024 - IEEE 31st International Conference on High Performance Computing, Data and Analytics Workshop",
+      "releaseDate": "2024-12-01",
+      "url": "https://doi.ieeecomputersociety.org/10.1109/HiPCW63042.2024.00046",
+      "summary": "Dhyan Yajnik, Huzefa Aiyub Ansari, Prajjwal Nijhara, Dip Sankar Banerjee"
+    }
+  ],
   "skills": [],
   "languages": [
     {
