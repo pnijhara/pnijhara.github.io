@@ -56,11 +56,6 @@
         - GPU Computing
         - Scalable Algorithms
 
-- title: Publications
-  type: list
-  contents:
-    - "SAGA: State-Aware Graph Analytics for Combinatorial Optimization on Dynamic Graphs (HPDC 2026)"
-
 - title: Other Interests
   type: list
   contents:

@@ -88,6 +88,13 @@
   "certificates": [],
   "publications": [
     {
+      "name": "SAGA: State-Aware Graph Analytics for Combinatorial Optimization on Dynamic Graphs",
+      "publisher": "HPDC 2026 - 35th ACM International Symposium on High-Performance Parallel and Distributed Computing",
+      "releaseDate": "2026-07-01",
+      "url": "",
+      "summary": "Prajjwal Nijhara, Rohit Prajapati, Dip Sankar Banerjee"
+    },
+    {
       "name": "PJsim: Towards Precise and Scalable Graph Similarity",
       "publisher": "SIGMOD 2026 - ACM International Conference on Management of Data",
       "releaseDate": "2026-06-01",
