@@ -67,6 +67,12 @@
   ],
   "awards": [
     {
+      "title": "SIGHPC Student Travel Grant",
+      "date": "2026-07-01",
+      "awarder": "SIGHPC",
+      "summary": "Travel grant for HPDC 2026"
+    },
+    {
       "title": "HiPC SRS Travel Grant",
       "date": "2025-12-19",
       "awarder": "HiPC",
@@ -87,6 +93,13 @@
   ],
   "certificates": [],
   "publications": [
+    {
+      "name": "ExCC: External Memory Connected Components on Large Graphs",
+      "publisher": "HPDC 2026 - 35th ACM International Symposium on High-Performance Parallel and Distributed Computing (Student Poster)",
+      "releaseDate": "2026-07-01",
+      "url": "",
+      "summary": "Prajjwal Nijhara, Dip Sankar Banerjee"
+    },
     {
       "name": "SAGA: State-Aware Graph Analytics for Combinatorial Optimization on Dynamic Graphs",
       "publisher": "HPDC 2026 - 35th ACM International Symposium on High-Performance Parallel and Distributed Computing",

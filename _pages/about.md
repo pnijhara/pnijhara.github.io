@@ -26,6 +26,12 @@ social: true  # includes social icons at the bottom of the page
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-PRAJJWAL%20NIJHARA-4285F4?style=flat-square&logo=googlescholar&logoColor=blue)](https://scholar.google.com/citations?user=xErUarEAAAAJ&hl=en)
 [![DBLP](https://img.shields.io/badge/DBLP-PRAJJWAL%20NIJHARA-007EC6?style=flat-square&logo=dblp&logoColor=green)](https://dblp.org/pid/402/8615.html)
 
+<div class="homepage-highlights" aria-label="Research highlights">
+  <span>Parallel graph algorithms</span>
+  <span>Dynamic graph analytics</span>
+  <span>High-performance systems</span>
+</div>
+
 Greetings everyone! 👋 I am Prajjwal Nijhara (PNIJHARA), **TCS Research Scholarship Program Fellow**, and currently pursuing a combined **M.Tech + Ph.D.** program in Computer Science at the prestigious **[Indian Institute of Technology, Jodhpur](https://iitj.ac.in/)**. I am dedicated to exploring the vast frontiers of computer science and contributing to its advancements through innovative research and development.
 
 Apart from Computer Science, I am a listener and a reader and spend my not so much available free time listening to people's stories and reading psychology, philosophy and poetry books. During my wonderful time at **[The Aligarh Muslim University](https://amu.ac.in/)**, I got introduced to Urdu poets and poetries and thus started writing some of my own.
